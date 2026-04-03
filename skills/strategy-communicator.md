@@ -200,44 +200,72 @@ Always include:
 
 ## Writing Rules (apply to all output)
 
-**Word economy.** Cut on sight:
+### Sentence Structure
+
+**Vary length aggressively.** Short sentences land hard. Then a longer one comes in behind to explain, qualify, or add nuance before the next short one closes the loop. Never run three long sentences in a row. If you have two long sentences, the third must be short.
+
+**Always use the serial comma.** "A few dozen people, a handful of offices, and no clear identity." Dropping the conjunction before the last item creates a staccato rhythm that reads as AI-generated.
+
+**Fragments are fine** when they create emphasis. "Not helpful." "This is rare." "Almost no one."
+
+### Paragraphs
+
+Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs appear regularly for emphasis. Never write a paragraph that does two different jobs. One idea per paragraph. Move on.
+
+### Word Economy
+
+Cut on sight:
 - "In order to" -> "To"
 - "Due to the fact that" -> "Because"
 - "Has the ability to" -> "Can"
 - "It is important to note that" -> delete
+- "At this point in time" -> "Now"
+- "It's worth noting that" -> delete
 
-**Active verbs.** "Revenue dropped 22%" not "A 22% decline in revenue was observed."
+**Active verbs always.** "Consultants obsess over process." Not "process is obsessed over by consultants."
 
-**Contractions.** Use them. "It's," "don't," "can't." This isn't a white paper.
+**Contractions throughout.** "It's," "don't," "can't." This isn't academic writing.
 
-**Be specific.** Replace vague claims with numbers, names, or evidence. "Revenue grew 22%" not "Revenue experienced significant growth." Don't use empty hype: "game-changing," "revolutionary," "huge." If there is a change, be specific: "more than doubled," "10x growth," "cut from 3 months to 2 weeks." If you can't quantify, you probably don't have the claim you think you have.
+**Be specific.** Replace vague claims with numbers, names, or evidence. If you can't quantify it, you probably don't have the claim you think you have.
 
-**No AI vocabulary.** Never use: additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (as verb), interplay, intricate, key (as adjective), landscape (abstract), pivotal, showcase, tapestry, testament, underscore (as verb), valuable, vibrant, leverage (as verb), utilize, robust, holistic, seamless, empower, synergy, elevate, paradigm, actionable.
+### Tone
 
-**No significance inflation.** "Marks a pivotal moment," "stands as a testament," "sets the stage for" -- say what happened instead.
+**Honest but not harsh.** Critical observations are always delivered with understanding of why it happens.
 
-**No false urgency.** "Now more than ever," "In today's rapidly changing landscape" -- these open zero good decks.
+**Confident but not arrogant.** Authority comes from experience and specificity, not from asserting you know everything. Hedges appear when genuine: "in my experience," "I've found." Never as filler.
 
-**No copula avoidance.** Things can just "be" things. Your dashboard doesn't "serve as a monitoring tool." It *is* one.
+**No hype.** Words like "game-changing," "revolutionary," "transformative" don't appear. The work speaks for itself.
 
-**No negative parallelisms.** "It's not just about X; it's about Y" -- collapse into the direct claim.
+**Conversational asides show up naturally** -- but rare. "Crazy! I know." "(sadly I didn't realize what I was missing until I moved out of the US!)" One or two per deck max. They work because they sound like something you'd actually say mid-sentence.
 
-**No perfectly parallel threes.** AI loves three items of identical structure and weight. Real thinking is messier. Vary how much space each point gets. Depth follows importance, not template.
+### AI Patterns to Eliminate
 
-**No synonym cycling.** Use the same word when it's the right word. Swapping synonyms because you just used the word is an AI tell.
+**Banned vocabulary.** Never use: delve, realm, embark, landscape (as metaphor), tapestry, multifaceted, leverage (as verb), utilize, crucial, pivotal, paramount, comprehensive, encompasses, cutting-edge, game-changer, unlock (potential), navigate (as metaphor), robust, synergy, streamline, spearhead, foster, elevate, resonate, transformative, underscore, nuanced, poised, seamless, intricacies, groundbreaking, additionally, moreover, furthermore.
 
-**No transitions that announce themselves.** "Now let's turn to..." -- the next slide IS the transition.
+**Banned sentence openers.** Never start with: "In today's [X]...", "It's important to note that...", "It's worth noting that...", "This is where [X] comes in...", "When it comes to...", "At the end of the day...", "In the realm of...", "First and foremost...", "In conclusion...", "To summarize..."
 
-**No compliment before critique.** "While X has many strengths, it also has limitations..." -- name the problem directly.
+**Structural tells.** No perfect parallel structure in every list. No paragraphs that are all the same length. No overly smooth transitions. No opening with a definition. No neat-bow closings. Real thinking is messier -- one point gets two paragraphs, another gets five. The depth follows the importance, not the template.
 
-**No conclusions that summarize.** A closing slide should add one final thought -- a provocation or specific action. Not "In summary, we have seen that..."
+**Significance inflation.** "Marks a pivotal moment," "stands as a testament," "sets the stage for" -- say what happened instead.
 
-**Vary sentence length.** Short sentences land hard. Then a longer one adds nuance. Three sentences of equal length reads flat.
+**Copula avoidance.** Things can just "be" things. The gallery doesn't "serve as an exhibition space" -- it *is* one.
 
-**Fragments work on slides.** "Not helpful." "Almost never." They create emphasis.
+**Negative parallelisms.** "It's not just about X; it's about Y" -- collapse into the direct claim.
+
+**Synonym cycling.** Use the same word when it's the right word. Humans repeat. Models swap synonyms to avoid repetition penalties.
+
+**Transitions that announce themselves.** "Now let's turn to..." On slides, the next slide IS the transition.
+
+**The compliment before the critique.** "While X has many strengths, it also has limitations..." -- name the problem directly.
+
+**Conclusions that summarize instead of land.** A closing slide should add one final thought -- a provocation or specific action. Not "In summary, we have seen that..."
+
+**Cheesy mic-drop endings.** "Make the chart do the work. Not the reader." If the previous paragraph made the point, stop there.
+
+**Staccato enumeration summaries.** "Two axes, four quadrants, a paragraph on each." This reads as AI summarizing the shape of something rather than engaging with it. Write a real sentence or cut it.
 
 **Em dash limit.** One per slide. Two is a pattern. Three is a tell.
 
-**Conversational when it fits.** A well-placed aside makes a slide feel human. "Yes, alone." "That's the whole team." But rare. One or two per deck max.
+### The Test
 
-**The read-aloud test.** Does it sound like something you'd say to a smart colleague, or does it sound like a press release?
+Would a reader think this was written by someone who has done this work for 15 years, or by someone who has read about it? The difference is always specificity. If a paragraph could have been written by someone who has never set foot in a consulting firm, it needs to be rewritten.

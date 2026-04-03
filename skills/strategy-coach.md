@@ -372,43 +372,55 @@ Active verbs always. Contractions always.
 
 **Vary length aggressively.** Short sentences land hard. Then a longer one adds nuance. Three sentences of equal length reads flat.
 
-**Fragments work on slides.** "Not helpful." "This is rare." "Almost no one."
+**Fragments work.** "Not helpful." "This is rare." "Almost no one."
+
+**Always use the serial comma.** "A few dozen people, a handful of offices, and no clear identity." Dropping the conjunction before the last item reads as AI-generated.
+
+### Paragraphs
+
+Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs for emphasis. Never write a paragraph that does two different jobs.
 
 ### Tone
 
-**Honest but not harsh.** Confident but not arrogant. Authority comes from experience and specificity, not assertion.
+**Honest but not harsh.** Critical observations are delivered with understanding of why it happens. "This is a mistake" is always followed by "here's why it happens and here's how to avoid it."
 
-**No empty hype.** "Game-changing" means nothing. "More than doubled," "10x growth," "cut from 3 months to 2 weeks" -- those mean something.
+**Confident but not arrogant.** Authority comes from experience and specificity. Hedges when genuine: "in my experience," "I've found." Never as filler.
 
-**Conversational when it fits.** One well-placed aside per deck, maybe two. More than that and none of them land.
+**No hype.** "Game-changing," "revolutionary," "transformative" don't appear. Neither do exclamation points. The work speaks for itself.
+
+**No performed humility.** The experience is named directly and drawn on without apology.
+
+**Conversational asides show up naturally:** "Crazy! I know." "Yes, that's right, writing a memo -- like it's 1980." Rare and never forced. One or two per deck max.
 
 ### AI Patterns to Eliminate
 
-**Significance inflation** -- "Marks a pivotal moment," "stands as a testament." Say what happened.
+**Banned vocabulary.** Never use: delve, realm, embark, landscape (as metaphor), tapestry, multifaceted, leverage (as verb), utilize, crucial, pivotal, paramount, comprehensive, encompasses, cutting-edge, game-changer, unlock (potential), navigate (as metaphor), robust, synergy, streamline, spearhead, foster, elevate, resonate, transformative, underscore, nuanced, poised, seamless, intricacies, groundbreaking, additionally, moreover, furthermore.
 
-**The perfectly parallel three** -- Real thinking is messier. Vary how much space each point gets.
+**Banned sentence openers.** Never start with: "In today's [X]...", "It's important to note that...", "It's worth noting that...", "This is where [X] comes in...", "When it comes to...", "At the end of the day...", "In the realm of...", "First and foremost...", "In conclusion...", "To summarize..."
 
-**Copula avoidance** -- "Serves as," "stands as." Things can just "be" things.
+**Structural tells.** No perfect parallel structure in every list. No paragraphs that are all the same length. No overly smooth transitions. No opening with a definition. No neat-bow closings. Real thinking is messier -- one point gets two paragraphs, another gets five.
 
-**Negative parallelisms** -- "It's not just about X; it's about Y." Collapse into the direct claim.
+**Significance inflation.** "Marks a pivotal moment," "stands as a testament" -- say what happened.
 
-**Synonym cycling** -- Use the same word when it's the right word.
+**Copula avoidance.** Things can just "be" things.
 
-**Em dash overuse** -- One per slide. Two is a pattern. Three is a tell.
+**Negative parallelisms.** "It's not just about X; it's about Y" -- collapse into the direct claim.
 
-**Over-explaining the obvious** -- Write for the room.
+**Synonym cycling.** Use the same word when it's the right word. Humans repeat.
 
-**Transitions that announce themselves** -- "Now let's turn to..." The next slide IS the transition.
+**Over-explaining the obvious.** If the audience knows what a meeting is, don't explain it. Trust the reader.
 
-**The compliment before critique** -- "While X has many strengths..." Name the problem.
+**Transitions that announce themselves.** "Now let's turn to..." On slides, the next slide IS the transition.
 
-**Conclusions that summarize** -- Add one final thought, not "In summary, we have seen that..."
+**The compliment before the critique.** "While X has many strengths..." Name the problem directly.
 
-**False urgency** -- "Now more than ever," "In today's rapidly changing landscape." These open zero good decks.
+**Conclusions that summarize instead of land.** Add one final thought -- a provocation or specific action.
 
-### AI Vocabulary Watchlist
+**Cheesy mic-drop endings.** "Do the work. Ship the thing." If the previous paragraph made the point, stop there.
 
-Never use: `additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (as verb), interplay, intricate, key (as adjective), landscape (abstract), pivotal, showcase, tapestry, testament, underscore (as verb), valuable, vibrant, leverage (as verb), utilize, robust, holistic, seamless, empower, synergy, elevate, paradigm, actionable`
+**Staccato enumeration summaries.** "Two axes, four quadrants, a paragraph on each." Write a real sentence or cut it.
+
+**Em dash overuse.** One per slide. Two is a pattern. Three is a tell.
 
 ### Slide Text Specifics
 
@@ -418,13 +430,25 @@ Never use: `additionally, align with, crucial, delve, emphasizing, enduring, enh
 
 **Stat callouts:** Number is the star (60-72pt). Label below reframes, not just names. Comparisons beat absolutes: "10x faster" beats "completed in 2 days."
 
+### How to Sound Human
+
+**Be specific, not general.** "I once watched a partner tank a $2M deal because he couldn't explain our recommendation in under 30 seconds." Not "Communication is crucial in business settings."
+
+**Include imperfection.** Start sentences with "And" or "But." Use fragments intentionally. Include asides.
+
+**Show uncertainty where appropriate.** "I'd guess that..." / "From what I've seen..." / "This might be wrong, but..."
+
+**Use real specifics.** "Walmart's CEO letter to shareholders in 2023..." Not "Many successful companies..."
+
 ### Final Writing Check
 
-1. Flag every AI vocabulary word. Replace or cut.
+1. Flag every banned vocabulary word. Replace or cut.
 2. Check for three consecutive same-length sentences. Break the pattern.
 3. Find empty hype. Replace with numbers.
-4. Read it out loud. Does it sound like a smart colleague or a press release?
-5. Would a McKinsey partner accept this? If they'd push back, rewrite.
+4. Scan for banned sentence openers. Delete.
+5. Check for structural tells -- all paragraphs same length? All lists parallel?
+6. Read it out loud. Press release or smart colleague?
+7. The specificity test: could a language model have generated this without real-world knowledge?
 
 ---
 

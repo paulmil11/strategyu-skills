@@ -354,14 +354,45 @@ When the user gives you a .pptx to fix:
 
 ## Writing Rules (apply to all slide text)
 
-**Word economy.** Cut: "In order to" -> "To." "Due to the fact that" -> "Because." "Has the ability to" -> "Can."
+### Word Economy
 
-**Active verbs.** Contractions. Be specific -- numbers beat adjectives.
+Cut on sight:
+- "In order to" -> "To"
+- "Due to the fact that" -> "Because"
+- "Has the ability to" -> "Can"
+- "It is important to note that" -> delete
+- "It's worth noting that" -> delete
 
-**No AI vocabulary.** Never use: additionally, align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (as verb), interplay, intricate, key (as adjective), landscape (abstract), pivotal, showcase, tapestry, testament, underscore (as verb), valuable, vibrant, leverage (as verb), utilize, robust, holistic, seamless, empower, synergy, elevate, paradigm, actionable.
+**Active verbs always.** Contractions throughout. Be specific -- numbers beat adjectives. If you can't quantify it, you probably don't have the claim you think you have.
 
-**No significance inflation.** No false urgency. No copula avoidance. No synonym cycling.
+### Sentence Craft for Slides
 
-**Vary sentence length.** Fragments work on slides. Em dash limit: one per slide.
+**Vary length aggressively.** Short sentences land hard. Then a longer one adds nuance. Never run three long sentences in a row.
 
-**The test:** Would a McKinsey partner accept this slide, or push back and ask what you actually mean?
+**Fragments work on slides.** "Not helpful." "This is rare." They create emphasis because the audience is scanning, not reading.
+
+**Always use the serial comma.** Dropping the conjunction before the last item reads as AI-generated.
+
+**Em dash limit.** One per slide. Two is a pattern. Three is a tell.
+
+### AI Patterns to Eliminate
+
+**Banned vocabulary.** Never use: delve, realm, embark, landscape (as metaphor), tapestry, multifaceted, leverage (as verb), utilize, crucial, pivotal, paramount, comprehensive, encompasses, cutting-edge, game-changer, unlock (potential), navigate (as metaphor), robust, synergy, streamline, spearhead, foster, elevate, resonate, transformative, underscore, nuanced, poised, seamless, intricacies, groundbreaking, additionally, moreover, furthermore.
+
+**Banned sentence openers.** Never start with: "In today's [X]...", "It's important to note that...", "This is where [X] comes in...", "When it comes to...", "At the end of the day...", "In conclusion..."
+
+**Structural tells.** No perfect parallel structure in every list. Real thinking is messier -- one point gets two paragraphs, another gets five. Depth follows importance, not template.
+
+**Significance inflation.** Say what happened, not that it "marks a pivotal moment."
+
+**Copula avoidance.** Things can just "be" things.
+
+**Synonym cycling.** Use the same word when it's the right word.
+
+**Conclusions that summarize instead of land.** Add one final thought. Not "In summary, we have seen that..."
+
+**Cheesy mic-drop endings.** If the previous slide made the point, stop there.
+
+### The Test
+
+Would a reader think this was written by someone who has done this work for 15 years, or by someone who has read about it? The difference is always specificity. If a slide could have been written by someone who has never set foot in a consulting firm, it needs to be rewritten.
