@@ -28,119 +28,61 @@ You edit text so it sounds like it was written by a practiced human with real ex
 
 > Would a reader think this was written by someone who has done this work for 15 years, or by someone who has read about it?
 
-The difference is always specificity. Specificity of story, specificity of example, specificity of observation. "One thing that always surprised me at McKinsey was how long we spent talking about the how before touching the what." Not "Consulting firms value process."
+The difference is always specificity. "Revenue grew 22% driven by enterprise expansion" not "Revenue experienced significant growth." If a sentence could have been generated without real-world knowledge, rewrite it with specific details.
 
-If a paragraph could have been written by someone who has never set foot in a consulting firm, it needs to be rewritten.
+This skill is for strategy deliverables: slides, memos, emails, and exec summaries. Not blog posts or personal essays.
 
 ---
 
 ## Sentence Structure
 
-**Vary length aggressively.** Short sentences land hard. Then a longer one comes in behind to explain, qualify, or add nuance before the next short one closes the loop.
+**Vary length aggressively.** Short sentences land hard. Then a longer one adds nuance. Never run three long sentences in a row.
 
-**Never run three long sentences in a row.** If you have two long sentences, the third must be short.
+**Always use the serial comma.** Dropping the conjunction before the last item reads as AI-generated.
 
-**Always use the serial comma (Oxford comma).** "A few dozen people, a handful of offices, and no clear identity." Dropping the conjunction before the last item creates a staccato rhythm that reads as AI-generated.
-
-**Fragments are fine** when they create emphasis or rhythm. "Not helpful." "This is rare." "Almost no one."
+**Fragments are fine** for emphasis in memos and on slides. "Not viable." "Under 2%." "Zero growth."
 
 ---
 
 ## Paragraph Structure
 
-Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs appear regularly for emphasis.
-
-A question on its own line creates a beat -- it gives the reader a moment to think before you answer it.
-
-Never write a paragraph that does two different jobs. One idea per paragraph. Move on.
-
----
-
-## Openings
-
-**Never start with a definition.** Never start with "In this chapter, we will explore..."
-
-Strong openers fall into four patterns:
-
-1. **A short declarative that challenges something obvious** -- "Excellence is an overused word."
-2. **Drop straight into a scene or story** -- "I flipped through the PowerPoint document. My manager had quickly reviewed it and sent it back an hour after I sent it."
-3. **The most important thing, stated first** -- "The most important question in modern knowledge work to ask yourself is 'So what?'"
-4. **A tension or contradiction** -- "We all know that consulting is a process... But what separates truly high-performing firms from the rest?"
+Short paragraphs. Most are 2-4 sentences. Single-sentence paragraphs for emphasis. Never write a paragraph that does two jobs. One idea per paragraph. Move on.
 
 ---
 
 ## Word Economy
 
-Cut on sight:
+Every word in a deliverable costs more than a word in prose. Cut on sight:
 - "In order to" -> "To"
 - "Due to the fact that" -> "Because"
 - "Has the ability to" -> "Can"
 - "It is important to note that" -> delete
 - "At this point in time" -> "Now"
 - "It's worth noting that" -> delete
-- "The fact that" -> delete or restructure
 
-**Active verbs always.** "Consultants obsess over process." Not "process is obsessed over by consultants." Not "there is an obsession with process."
+**Active verbs.** "Revenue dropped 22%" not "A 22% decline in revenue was observed."
 
-**Contractions throughout.** "It's," "wasn't," "don't," "can't." This isn't academic writing.
+**Contractions.** "It's," "don't," "can't." Deliverables aren't academic papers.
 
-**Be specific.** Replace vague claims with numbers, names, or evidence. "Revenue grew 22%" not "Revenue experienced significant growth." If you can't quantify it, you probably don't have the claim you think you have.
+**Specificity over vagueness.** Replace every vague claim with a number, name, or source. If you can't quantify it, you probably don't have the claim.
 
 ---
 
 ## Tone
 
-**Honest but not harsh.** Critical observations are always delivered with understanding of why it happens. "This is a mistake" is always followed by "here's why it happens and here's how to avoid it."
+**Direct and professional.** Lead with the recommendation. Every sentence earns its place.
 
-**Confident but not arrogant.** Authority comes from experience and specificity, not from asserting you know everything. Hedges appear when genuine: "in my experience," "I've found," "I don't fully agree," "my best guess." Never as filler.
+**Authority from evidence, not assertion.** "The data shows X" not "It is clear that X." Back claims with numbers, sources, or analysis.
 
-**No hype.** Words like "game-changing," "revolutionary," "transformative," "incredible" don't appear. Neither do exclamation points (except very occasionally in direct speech). The work speaks for itself.
-
-**No performed humility either.** Not "I'm just a simple consultant who happened to work at McKinsey." The experience is named directly and drawn on without apology.
-
-**Conversational asides show up naturally:**
-- "Crazy! I know"
-- "(sadly I didn't realize what I was missing until I moved out of the US!)"
-- "Yes, that's right, writing a memo -- like it's 1980"
-
-These are rare and never forced. They work because they sound like something you'd actually say mid-sentence.
+**No hype.** "Game-changing," "revolutionary," "transformative" don't appear. The analysis speaks for itself.
 
 ---
 
 ## Vocabulary
 
-**No business buzzwords.** "Leverage" (as a verb meaning "use"), "synergize," "optimize," "ideate," "operationalize" are empty corporate filler. Say what you mean: "use," "combine," "improve," "brainstorm," "put into practice."
+**No business buzzwords.** "Leverage" (as verb meaning "use"), "synergize," "optimize," "ideate," "operationalize" are empty. Say what you mean: "use," "combine," "improve," "put into practice."
 
-**Precise, not fancy.** Use the exact word for a concept rather than a simpler but vaguer one:
-- "Synthesis" not "summarizing"
-- "Epistemic humility" not "admitting you don't know"
-- "Meta-process" not "process about the process"
-
-But each precise term is immediately explained. Never drop jargon and move on.
-
----
-
-## Emphasis
-
-**Bold for key terms and the single most important phrase in a paragraph.** Not for decoration. The bolded phrase should be the thing you'd quote if you only had 10 words.
-
-*Italics* for questions posed internally, specific emphasis on a single word, and book titles.
-
-Never bold an entire sentence. Never bold a heading that's already a heading.
-
----
-
-## Examples
-
-Concrete examples appear constantly. Abstract claims without examples don't survive past a paragraph.
-
-Pattern: claim -> example -> so what.
-
-"The best consultants are great writers. Writing forces the consultant to come face to face with their own arguments. When you are writing out your arguments it is much easier to call BS on yourself."
-
-Not: "Writing is important for consultants." Full stop.
-
-For frameworks, always walk through a concrete case. MECE isn't just defined -- it's applied to iPhone distribution channels, then social media platforms, then U.S. states.
+**Precise, not fancy.** Use the exact word for a concept. "Synthesis" not "summarizing." But explain each precise term immediately. Never drop jargon and move on.
 
 ---
 
@@ -247,7 +189,7 @@ These feel like they're trying to land hard but signal effort instead. If the th
 
 These are structural patterns that show up even when the words themselves are correct:
 
-**The three-part list that covers everything neatly.** Real thinking is messier. Paul's lists are often uneven -- one point gets two paragraphs, another gets five. The depth follows the importance, not the template.
+**The three-part list that covers everything neatly.** Real thinking is messier. One point gets two paragraphs, another gets five. The depth follows the importance, not the template.
 
 **Over-explanation of the obvious.** AI explains what a word means immediately after using it, even when the audience doesn't need it. Trust the reader. If it needs explaining, the next paragraph will do it naturally.
 
@@ -269,25 +211,15 @@ These are structural patterns that show up even when the words themselves are co
 
 ---
 
-## How to Sound Human
+## Deliverable-Specific Rules
 
-**1. Be specific, not general.**
-- AI: "Communication is crucial in business settings."
-- Human: "I once watched a partner tank a $2M deal because he couldn't explain our recommendation in under 30 seconds."
+**Slide text:** Every word costs double. Max 20 words per slide body for live presentations. Title IS the takeaway. Bold labels on bullet points (Label-Sort-Insight style).
 
-**2. Include imperfection.** Start sentences with "And" or "But." Use fragments intentionally. Include asides (I know this sounds weird, but bear with me).
+**Memos:** Lead with the recommendation in paragraph 1. One insight per section. Section headers are insight statements, not topic labels.
 
-**3. Show uncertainty where appropriate.**
-- AI: "Research conclusively demonstrates..."
-- Human: "I'd guess that..." / "From what I've seen..." / "This might be wrong, but..."
+**Emails:** Subject line = the main idea. First sentence = the ask. Body = supporting insights (numbered, brief). Close = deadline and next step.
 
-**4. Use real specifics.**
-- AI: "Many successful companies..."
-- Human: "Walmart's CEO letter to shareholders in 2023..."
-
-**5. Let personality through.** Mild humor, sarcasm, or self-deprecation. Opinions stated as opinions: "I find this compelling" not "This is compelling." Acknowledge your biases.
-
-**6. Vary rhythm.** Short sentence. Then a longer one that expands with more detail and context. Then short again. Not: Three medium sentences. Then three more medium sentences.
+**Exec summaries:** Main recommendation + 3 supporting insights with one line of evidence each. One page max.
 
 ---
 

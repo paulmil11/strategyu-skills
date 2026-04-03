@@ -388,9 +388,11 @@ Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs fo
 
 **No hype.** "Game-changing," "revolutionary," "transformative" don't appear. Neither do exclamation points. The work speaks for itself.
 
-**No performed humility.** The experience is named directly and drawn on without apology.
+### How to Sound Human in Deliverables
 
-**Conversational asides show up naturally:** "Crazy! I know." "Yes, that's right, writing a memo -- like it's 1980." Rare and never forced. One or two per deck max.
+**Be specific, not general.** "Revenue dropped 22% driven by key account losses" not "Revenue declined significantly."
+
+**Use real specifics.** Name the source, the year, the number. "McKinsey's 2024 report found..." not "Industry reports suggest..."
 
 ### AI Patterns to Eliminate
 
@@ -430,15 +432,15 @@ Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs fo
 
 **Stat callouts:** Number is the star (60-72pt). Label below reframes, not just names. Comparisons beat absolutes: "10x faster" beats "completed in 2 days."
 
-### How to Sound Human
+### Deliverable-Specific Rules
 
-**Be specific, not general.** "I once watched a partner tank a $2M deal because he couldn't explain our recommendation in under 30 seconds." Not "Communication is crucial in business settings."
+**Slide text:** Max 20 words per slide body for live presentations. Title IS the takeaway. Bold labels on bullet points.
 
-**Include imperfection.** Start sentences with "And" or "But." Use fragments intentionally. Include asides.
+**Memos:** Lead with recommendation in paragraph 1. One insight per section. Section headers are insight statements.
 
-**Show uncertainty where appropriate.** "I'd guess that..." / "From what I've seen..." / "This might be wrong, but..."
+**Emails:** Subject line = main idea. First sentence = the ask. Body = numbered insights. Close = deadline.
 
-**Use real specifics.** "Walmart's CEO letter to shareholders in 2023..." Not "Many successful companies..."
+**Exec summaries:** Main recommendation + 3 insights with one line of evidence each. One page max.
 
 ### Final Writing Check
 

@@ -354,6 +354,8 @@ When the user gives you a .pptx to fix:
 
 ## Writing Rules (apply to all slide text)
 
+These rules are for strategy deliverables. Every word on a slide costs more than a word in prose.
+
 ### Word Economy
 
 Cut on sight:
@@ -363,15 +365,15 @@ Cut on sight:
 - "It is important to note that" -> delete
 - "It's worth noting that" -> delete
 
-**Active verbs always.** Contractions throughout. Be specific -- numbers beat adjectives. If you can't quantify it, you probably don't have the claim you think you have.
+**Active verbs.** Contractions. Numbers beat adjectives. If you can't quantify it, you probably don't have the claim.
 
-### Sentence Craft for Slides
+### Sentence Craft
 
-**Vary length aggressively.** Short sentences land hard. Then a longer one adds nuance. Never run three long sentences in a row.
+**Vary length.** Short sentences land hard. Then a longer one adds nuance. Never three long sentences in a row.
 
-**Fragments work on slides.** "Not helpful." "This is rare." They create emphasis because the audience is scanning, not reading.
+**Fragments work on slides.** "Not viable." "Under 2%." They create emphasis because the audience is scanning, not reading.
 
-**Always use the serial comma.** Dropping the conjunction before the last item reads as AI-generated.
+**Serial comma always.** Dropping the conjunction before the last item reads as AI-generated.
 
 **Em dash limit.** One per slide. Two is a pattern. Three is a tell.
 
@@ -379,9 +381,9 @@ Cut on sight:
 
 **Banned vocabulary.** Never use: delve, realm, embark, landscape (as metaphor), tapestry, multifaceted, leverage (as verb), utilize, crucial, pivotal, paramount, comprehensive, encompasses, cutting-edge, game-changer, unlock (potential), navigate (as metaphor), robust, synergy, streamline, spearhead, foster, elevate, resonate, transformative, underscore, nuanced, poised, seamless, intricacies, groundbreaking, additionally, moreover, furthermore.
 
-**Banned sentence openers.** Never start with: "In today's [X]...", "It's important to note that...", "This is where [X] comes in...", "When it comes to...", "At the end of the day...", "In conclusion..."
+**Banned sentence openers.** Never: "In today's [X]...", "It's important to note...", "This is where [X] comes in...", "When it comes to...", "In conclusion..."
 
-**Structural tells.** No perfect parallel structure in every list. Real thinking is messier -- one point gets two paragraphs, another gets five. Depth follows importance, not template.
+**Structural tells.** No perfect parallel structure in every list. Depth follows importance, not template.
 
 **Significance inflation.** Say what happened, not that it "marks a pivotal moment."
 
@@ -389,10 +391,8 @@ Cut on sight:
 
 **Synonym cycling.** Use the same word when it's the right word.
 
-**Conclusions that summarize instead of land.** Add one final thought. Not "In summary, we have seen that..."
-
-**Cheesy mic-drop endings.** If the previous slide made the point, stop there.
+**Conclusions that summarize.** End with a next step. Not "In summary, we have seen that..."
 
 ### The Test
 
-Would a reader think this was written by someone who has done this work for 15 years, or by someone who has read about it? The difference is always specificity. If a slide could have been written by someone who has never set foot in a consulting firm, it needs to be rewritten.
+Could a language model have generated this slide without real-world knowledge? If yes, rewrite with specific details. Every claim backed by a number, a source, or an analysis.

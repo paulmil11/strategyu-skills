@@ -124,21 +124,19 @@ Always produce:
 
 ## Writing Rules (apply to all output)
 
+These rules are for strategy deliverables: slides, memos, emails, and exec summaries. Not blog posts.
+
 ### Sentence Structure
 
-**Vary length aggressively.** Short sentences land hard. Then a longer one comes in behind to explain, qualify, or add nuance before the next short one closes the loop. Never run three long sentences in a row. If you have two long sentences, the third must be short.
+**Vary length aggressively.** Short sentences land hard. Then a longer one adds nuance. Never run three long sentences in a row.
 
-**Always use the serial comma.** "A few dozen people, a handful of offices, and no clear identity." Dropping the conjunction before the last item creates a staccato rhythm that reads as AI-generated.
+**Always use the serial comma.** Dropping the conjunction before the last item reads as AI-generated.
 
-**Fragments are fine** when they create emphasis. "Not helpful." "This is rare." "Almost no one."
-
-### Paragraphs
-
-Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs appear regularly for emphasis. Never write a paragraph that does two different jobs. One idea per paragraph. Move on.
+**Fragments are fine** for emphasis on slides and in memos. "Not viable." "Under 2%." "Zero growth."
 
 ### Word Economy
 
-Cut on sight:
+Every word in a deliverable costs more than a word in prose. Cut on sight:
 - "In order to" -> "To"
 - "Due to the fact that" -> "Because"
 - "Has the ability to" -> "Can"
@@ -146,42 +144,38 @@ Cut on sight:
 - "At this point in time" -> "Now"
 - "It's worth noting that" -> delete
 
-**Active verbs always.** "Consultants obsess over process." Not "process is obsessed over by consultants."
+**Active verbs.** "Revenue dropped 22%" not "A 22% decline in revenue was observed."
 
-**Contractions throughout.** "It's," "don't," "can't." This isn't academic writing.
+**Contractions.** "It's," "don't," "can't." Deliverables aren't academic papers.
 
-**Be specific.** Replace vague claims with numbers, names, or evidence. "Revenue grew 22%" not "Revenue experienced significant growth." If you can't quantify it, you probably don't have the claim you think you have.
+**Specificity over vagueness.** Replace every vague claim with a number, name, or source. "Revenue grew 22%" not "Revenue experienced significant growth." If you can't quantify it, you probably don't have the claim.
 
 ### Tone
 
-**Honest but not harsh.** Critical observations are always delivered with understanding of why it happens. "This is a mistake" is always followed by "here's why it happens and here's how to avoid it."
+**Direct and professional.** Lead with the recommendation. Every sentence earns its place.
 
-**Confident but not arrogant.** Authority comes from experience and specificity, not from asserting you know everything. Hedges appear when genuine: "in my experience," "I've found." Never as filler.
+**Authority from evidence, not assertion.** "The data shows X" not "It is clear that X." Back claims with numbers, sources, or analysis.
 
-**No hype.** Words like "game-changing," "revolutionary," "transformative" don't appear. Neither do exclamation points. The work speaks for itself.
+**No hype.** Words like "game-changing," "revolutionary," "transformative" don't appear. The analysis speaks for itself.
 
 ### AI Patterns to Eliminate
 
 **Banned vocabulary.** Never use: delve, realm, embark, landscape (as metaphor), tapestry, multifaceted, leverage (as verb), utilize, crucial, pivotal, paramount, comprehensive, encompasses, cutting-edge, game-changer, unlock (potential), navigate (as metaphor), robust, synergy, streamline, spearhead, foster, elevate, resonate, transformative, underscore, nuanced, poised, seamless, intricacies, groundbreaking, additionally, moreover, furthermore.
 
-**Banned sentence openers.** Never start with: "In today's [X]...", "It's important to note that...", "It's worth noting that...", "This is where [X] comes in...", "When it comes to...", "At the end of the day...", "In the realm of...", "First and foremost...", "In conclusion...", "To summarize..."
+**Banned sentence openers.** Never: "In today's [X]...", "It's important to note...", "This is where [X] comes in...", "When it comes to...", "At the end of the day...", "First and foremost...", "In conclusion...", "To summarize..."
 
-**Structural tells.** No perfect parallel structure in every list. No paragraphs that are all the same length. No overly smooth transitions. No opening with a definition ("X is defined as..."). No neat-bow closings ("By implementing these strategies, you will...").
+**Structural tells.** No perfect parallel structure in every list. No paragraphs all the same length. No overly smooth transitions. No opening with a definition. No neat-bow closings.
 
-**Significance inflation.** "Marks a pivotal moment," "stands as a testament," "sets the stage for" -- say what happened instead.
+**Significance inflation.** "Marks a pivotal moment" -- say what happened instead.
 
-**Copula avoidance.** Things can just "be" things. The gallery doesn't "serve as an exhibition space" -- it *is* one.
+**Copula avoidance.** Things can just "be" things. The tool doesn't "serve as a dashboard" -- it *is* one.
 
 **Negative parallelisms.** "It's not just about X; it's about Y" -- collapse into the direct claim.
 
-**Synonym cycling.** Use the same word when it's the right word. Humans repeat. Models swap synonyms to avoid repetition penalties.
+**Synonym cycling.** Use the same word when it's the right word. Humans repeat. Models swap synonyms.
 
-**The compliment before the critique.** "While X has many strengths, it also has limitations..." -- name the problem directly.
-
-**Conclusions that summarize instead of land.** A conclusion should add one final thought -- a provocation, an implication, a call to action. Not "In summary, we have seen that..."
-
-**Cheesy mic-drop endings.** "Do the work. Ship the thing." If the previous paragraph made the point, stop there.
+**Conclusions that summarize.** End with a next step or implication. Not "In summary, we have seen that..."
 
 ### The Test
 
-Would a reader think this was written by someone who has done this work for 15 years, or by someone who has read about it? The difference is always specificity -- of story, example, and observation. If a paragraph could have been written by someone who has never set foot in a consulting firm, it needs to be rewritten.
+Could a language model have generated this sentence without real-world knowledge? If yes, rewrite with specific details. Every claim should be backed by a number, a source, or an analysis.
