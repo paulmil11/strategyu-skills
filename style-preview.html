@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategy Slides — Style Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;700;900&family=Libre+Franklin:wght@400;600;700&family=Fraunces:wght@400;700;900&family=Inter:wght@400;600;700&family=Montserrat:wght@400;700;800&family=Source+Serif+4:wght@400;600;700&family=Lora:wght@400;600;700&family=Cormorant+Garamond:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a0a; color: #ccc; padding: 40px; }
+  h1 { font-size: 28px; color: #fff; margin-bottom: 8px; }
+  .subtitle { color: #888; margin-bottom: 48px; font-size: 15px; }
+  .style-section { margin-bottom: 72px; }
+  .style-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+  .style-name { font-size: 22px; color: #fff; font-weight: 600; }
+  .style-desc { font-size: 14px; color: #777; }
+  .font-note { font-size: 12px; color: #555; font-family: monospace; }
+  .slides { display: flex; gap: 20px; flex-wrap: wrap; }
+  .slide {
+    width: 520px; height: 293px; border-radius: 4px; padding: 30px 36px;
+    position: relative; overflow: hidden; flex-shrink: 0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+  .slide-label {
+    position: absolute; bottom: 8px; right: 12px; font-size: 9px;
+    opacity: 0.4; font-family: monospace;
+  }
+  .swatches { display: flex; gap: 8px; margin-bottom: 20px; }
+  .swatch { width: 32px; height: 32px; border-radius: 4px; }
+  .swatch-label { font-size: 9px; font-family: monospace; color: #555; margin-top: 2px; text-align: center; }
+  .swatch-group { display: flex; flex-direction: column; align-items: center; }
+  .divider { border: none; border-top: 1px solid #222; margin: 64px 0 0 0; }
+
+  /* ═══════════════════════════════════════════
+     1. EDITORIAL — Serif headings, clean body
+     ═══════════════════════════════════════════ */
+  .editorial .slide { font-family: 'DM Sans', sans-serif; }
+  .editorial .s-title { background: #1a1a2e; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; }
+  .editorial .s-title h2 { font-family: 'DM Serif Display', Georgia, serif; font-size: 28px; font-weight: 400; line-height: 1.2; margin-bottom: 10px; }
+  .editorial .s-title p { font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 1px; text-transform: uppercase; }
+  .editorial .s-title .accent-stripe { position: absolute; top: 0; left: 0; right: 0; height: 5px; background: linear-gradient(90deg, #e63946, #f4a261); }
+
+  .editorial .s-exec { background: #fefefe; color: #2b2b2b; }
+  .editorial .s-exec h2 { font-family: 'DM Serif Display', Georgia, serif; font-size: 18px; font-weight: 400; color: #1a1a2e; margin-bottom: 16px; line-height: 1.35; }
+  .editorial .s-exec .insight { display: flex; gap: 10px; margin-bottom: 10px; font-size: 12px; line-height: 1.5; }
+  .editorial .s-exec .insight-num { color: #e63946; font-weight: 700; font-size: 13px; min-width: 18px; }
+  .editorial .s-exec .insight-label { font-weight: 700; color: #1a1a2e; }
+
+  .editorial .s-content { background: #fefefe; color: #2b2b2b; }
+  .editorial .s-content h2 { font-family: 'DM Serif Display', Georgia, serif; font-size: 16px; font-weight: 400; color: #1a1a2e; margin-bottom: 16px; line-height: 1.35; }
+  .editorial .s-content .bullet { font-size: 11.5px; margin-bottom: 9px; line-height: 1.6; padding-left: 16px; position: relative; }
+  .editorial .s-content .bullet::before { content: ""; position: absolute; left: 0; top: 7px; width: 8px; height: 1.5px; background: #e63946; }
+  .editorial .s-content .bullet strong { color: #1a1a2e; font-weight: 700; }
+
+  .editorial .s-stat { background: #1a1a2e; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .editorial .s-stat .number { font-family: 'DM Serif Display', Georgia, serif; font-size: 80px; font-weight: 400; color: #e63946; }
+  .editorial .s-stat .label { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 4px; letter-spacing: 0.5px; }
+
+  /* ═══════════════════════════════════════════
+     2. BOARDROOM — Playfair serif, deep green
+     ═══════════════════════════════════════════ */
+  .boardroom .slide { font-family: 'Libre Franklin', sans-serif; }
+  .boardroom .s-title { background: #1B3A2D; color: #fff; display: flex; flex-direction: column; justify-content: center; }
+  .boardroom .s-title h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 26px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
+  .boardroom .s-title p { font-size: 12px; color: rgba(255,255,255,0.5); }
+  .boardroom .s-title .gold-rule { position: absolute; bottom: 28px; left: 36px; width: 48px; height: 2px; background: #C5975B; }
+
+  .boardroom .s-exec { background: #F7F5F0; color: #333; }
+  .boardroom .s-exec h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 17px; font-weight: 700; color: #1B3A2D; margin-bottom: 16px; line-height: 1.35; }
+  .boardroom .s-exec .insight { display: flex; gap: 10px; margin-bottom: 10px; font-size: 12px; line-height: 1.5; }
+  .boardroom .s-exec .insight-num { color: #C5975B; font-weight: 700; font-size: 14px; min-width: 18px; }
+  .boardroom .s-exec .insight-label { font-weight: 700; color: #1B3A2D; }
+
+  .boardroom .s-content { background: #F7F5F0; color: #444; }
+  .boardroom .s-content h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 15px; font-weight: 700; color: #1B3A2D; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1.5px solid #C5975B; }
+  .boardroom .s-content .bullet { font-size: 11.5px; margin-bottom: 8px; line-height: 1.55; padding-left: 14px; position: relative; }
+  .boardroom .s-content .bullet::before { content: ""; position: absolute; left: 0; top: 6px; width: 5px; height: 5px; border: 1.5px solid #C5975B; border-radius: 50%; }
+  .boardroom .s-content .bullet strong { color: #1B3A2D; font-weight: 700; }
+
+  .boardroom .s-stat { background: #1B3A2D; color: #F7F5F0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .boardroom .s-stat .number { font-family: 'Playfair Display', Georgia, serif; font-size: 76px; font-weight: 900; color: #C5975B; }
+  .boardroom .s-stat .label { font-size: 12px; color: rgba(247,245,240,0.6); margin-top: 6px; letter-spacing: 1.5px; text-transform: uppercase; }
+
+  /* ═══════════════════════════════════════════
+     3. INK — Fraunces serif, black & white, literary
+     ═══════════════════════════════════════════ */
+  .ink .slide { font-family: 'Inter', sans-serif; }
+  .ink .s-title { background: #fff; color: #111; display: flex; flex-direction: column; justify-content: center; border: 1px solid #e0e0e0; }
+  .ink .s-title h2 { font-family: 'Fraunces', Georgia, serif; font-size: 26px; font-weight: 900; line-height: 1.2; margin-bottom: 10px; }
+  .ink .s-title p { font-size: 12px; color: #999; }
+  .ink .s-title .dot-accent { position: absolute; top: 30px; right: 36px; width: 12px; height: 12px; border-radius: 50%; background: #111; }
+
+  .ink .s-exec { background: #fff; color: #333; border: 1px solid #e0e0e0; }
+  .ink .s-exec h2 { font-family: 'Fraunces', Georgia, serif; font-size: 17px; font-weight: 700; color: #111; margin-bottom: 16px; line-height: 1.35; }
+  .ink .s-exec .insight { display: flex; gap: 10px; margin-bottom: 11px; font-size: 12px; line-height: 1.5; }
+  .ink .s-exec .insight-num { color: #111; font-family: 'Fraunces', serif; font-weight: 900; font-size: 18px; min-width: 22px; }
+  .ink .s-exec .insight-label { font-weight: 700; color: #111; }
+
+  .ink .s-content { background: #fff; color: #444; border: 1px solid #e0e0e0; }
+  .ink .s-content h2 { font-family: 'Fraunces', Georgia, serif; font-size: 15px; font-weight: 700; color: #111; margin-bottom: 16px; }
+  .ink .s-content .bullet { font-size: 11.5px; margin-bottom: 9px; line-height: 1.6; padding-left: 20px; position: relative; }
+  .ink .s-content .bullet::before { content: "/"; position: absolute; left: 4px; top: 0; color: #999; font-weight: 300; font-size: 13px; }
+  .ink .s-content .bullet strong { color: #111; font-weight: 700; }
+
+  .ink .s-stat { background: #111; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .ink .s-stat .number { font-family: 'Fraunces', Georgia, serif; font-size: 84px; font-weight: 900; color: #fff; }
+  .ink .s-stat .label { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 6px; letter-spacing: 0.5px; }
+
+  /* ═══════════════════════════════════════════
+     4. MIDNIGHT — Lora serif, dark mode, amber accent
+     ═══════════════════════════════════════════ */
+  .midnight .slide { font-family: 'Inter', sans-serif; }
+  .midnight .s-title { background: #0f0f14; color: #f0ead6; display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid #222; }
+  .midnight .s-title h2 { font-family: 'Lora', Georgia, serif; font-size: 26px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
+  .midnight .s-title p { font-size: 12px; color: rgba(240,234,214,0.4); }
+  .midnight .s-title .amber-line { position: absolute; top: 0; left: 0; right: 0; height: 3px; background: #D4A843; }
+
+  .midnight .s-exec { background: #16161d; color: #c8c0aa; border: 1px solid #222; }
+  .midnight .s-exec h2 { font-family: 'Lora', Georgia, serif; font-size: 17px; font-weight: 700; color: #f0ead6; margin-bottom: 16px; line-height: 1.35; }
+  .midnight .s-exec .insight { display: flex; gap: 10px; margin-bottom: 10px; font-size: 12px; line-height: 1.5; }
+  .midnight .s-exec .insight-num { color: #D4A843; font-weight: 700; font-size: 14px; min-width: 18px; }
+  .midnight .s-exec .insight-label { font-weight: 700; color: #f0ead6; }
+
+  .midnight .s-content { background: #16161d; color: #b0a990; border: 1px solid #222; }
+  .midnight .s-content h2 { font-family: 'Lora', Georgia, serif; font-size: 15px; font-weight: 700; color: #f0ead6; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #333; }
+  .midnight .s-content .bullet { font-size: 11.5px; margin-bottom: 8px; line-height: 1.6; padding-left: 16px; position: relative; }
+  .midnight .s-content .bullet::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 1.5px; background: #D4A843; }
+  .midnight .s-content .bullet strong { color: #f0ead6; font-weight: 600; }
+
+  .midnight .s-stat { background: #0f0f14; color: #f0ead6; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid #222; }
+  .midnight .s-stat .number { font-family: 'Lora', Georgia, serif; font-size: 76px; font-weight: 700; color: #D4A843; }
+  .midnight .s-stat .label { font-size: 12px; color: rgba(240,234,214,0.45); margin-top: 6px; letter-spacing: 0.5px; }
+
+  /* ═══════════════════════════════════════════
+     5. STUDIO — Space Grotesk + Instrument Serif, indigo
+     ═══════════════════════════════════════════ */
+  .studio .slide { font-family: 'Space Grotesk', sans-serif; }
+  .studio .s-title { background: linear-gradient(135deg, #2d1b69, #1a1145); color: #fff; display: flex; flex-direction: column; justify-content: center; }
+  .studio .s-title h2 { font-family: 'Instrument Serif', Georgia, serif; font-size: 30px; font-weight: 400; line-height: 1.2; margin-bottom: 10px; font-style: italic; }
+  .studio .s-title p { font-size: 12px; color: rgba(255,255,255,0.45); letter-spacing: 1px; }
+  .studio .s-title .glow { position: absolute; top: -40px; right: -40px; width: 160px; height: 160px; border-radius: 50%; background: radial-gradient(circle, rgba(139,92,246,0.25), transparent 70%); }
+
+  .studio .s-exec { background: #fafafa; color: #333; }
+  .studio .s-exec h2 { font-family: 'Instrument Serif', Georgia, serif; font-size: 18px; font-weight: 400; color: #2d1b69; margin-bottom: 16px; line-height: 1.35; }
+  .studio .s-exec .insight { display: flex; gap: 10px; margin-bottom: 11px; font-size: 12px; line-height: 1.5; }
+  .studio .s-exec .insight-num { color: #8b5cf6; font-weight: 700; font-size: 16px; min-width: 20px; }
+  .studio .s-exec .insight-label { font-weight: 700; color: #2d1b69; }
+
+  .studio .s-content { background: #fafafa; color: #444; }
+  .studio .s-content h2 { font-family: 'Instrument Serif', Georgia, serif; font-size: 16px; font-weight: 400; color: #2d1b69; margin-bottom: 16px; }
+  .studio .s-content .bullet { font-size: 11.5px; margin-bottom: 9px; line-height: 1.6; padding-left: 18px; position: relative; }
+  .studio .s-content .bullet::before { content: ""; position: absolute; left: 2px; top: 5px; width: 7px; height: 7px; border-radius: 2px; background: #8b5cf6; opacity: 0.7; }
+  .studio .s-content .bullet strong { color: #2d1b69; font-weight: 700; }
+
+  .studio .s-stat { background: linear-gradient(135deg, #2d1b69, #1a1145); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .studio .s-stat .number { font-family: 'Instrument Serif', Georgia, serif; font-size: 82px; font-weight: 400; color: #8b5cf6; font-style: italic; }
+  .studio .s-stat .label { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 6px; letter-spacing: 1px; }
+
+  /* ═══════════════════════════════════════════
+     6. EARTH — Cormorant serif, warm naturals
+     ═══════════════════════════════════════════ */
+  .earth .slide { font-family: 'DM Sans', sans-serif; }
+  .earth .s-title { background: #3c2415; color: #f5ebe0; display: flex; flex-direction: column; justify-content: flex-end; }
+  .earth .s-title h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 28px; font-weight: 600; line-height: 1.2; margin-bottom: 10px; }
+  .earth .s-title p { font-size: 12px; color: rgba(245,235,224,0.45); }
+  .earth .s-title .terracotta-bar { position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: #C87941; }
+
+  .earth .s-exec { background: #faf6f1; color: #3c3028; }
+  .earth .s-exec h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 19px; font-weight: 700; color: #3c2415; margin-bottom: 16px; line-height: 1.35; }
+  .earth .s-exec .insight { display: flex; gap: 10px; margin-bottom: 10px; font-size: 12px; line-height: 1.5; }
+  .earth .s-exec .insight-num { color: #C87941; font-weight: 700; font-size: 14px; min-width: 18px; }
+  .earth .s-exec .insight-label { font-weight: 700; color: #3c2415; }
+
+  .earth .s-content { background: #faf6f1; color: #4a3f35; }
+  .earth .s-content h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 16px; font-weight: 700; color: #3c2415; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1.5px solid #C87941; }
+  .earth .s-content .bullet { font-size: 11.5px; margin-bottom: 8px; line-height: 1.6; padding-left: 16px; position: relative; }
+  .earth .s-content .bullet::before { content: ""; position: absolute; left: 0; top: 6px; width: 8px; height: 2px; background: #C87941; border-radius: 1px; }
+  .earth .s-content .bullet strong { color: #3c2415; font-weight: 700; }
+
+  .earth .s-stat { background: #3c2415; color: #f5ebe0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .earth .s-stat .number { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 78px; font-weight: 700; color: #C87941; }
+  .earth .s-stat .label { font-size: 12px; color: rgba(245,235,224,0.55); margin-top: 6px; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* ═══════════════════════════════════════════
+     7. BOLD CORPORATE (original, kept)
+     ═══════════════════════════════════════════ */
+  .bold .slide { font-family: 'Montserrat', sans-serif; }
+  .bold .s-title { background: #000; color: #fff; }
+  .bold .s-title h2 { font-size: 28px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .bold .s-title p { font-size: 13px; color: #666; }
+  .bold .s-title .accent-bar { position: absolute; top: 0; left: 0; width: 6px; height: 100%; background: #FF3366; }
+
+  .bold .s-exec { background: #F8F8F8; color: #333; }
+  .bold .s-exec h2 { font-size: 17px; font-weight: 800; color: #000; margin-bottom: 14px; letter-spacing: -0.3px; }
+  .bold .s-exec .insight { display: flex; gap: 10px; margin-bottom: 10px; font-size: 12px; line-height: 1.5; }
+  .bold .s-exec .insight-num { color: #FF3366; font-weight: 800; font-size: 16px; min-width: 20px; }
+  .bold .s-exec .insight-label { font-weight: 700; color: #000; }
+
+  .bold .s-content { background: #F8F8F8; color: #333; }
+  .bold .s-content h2 { font-size: 16px; font-weight: 800; color: #000; margin-bottom: 14px; letter-spacing: -0.3px; }
+  .bold .s-content .bullet { font-size: 11.5px; margin-bottom: 8px; line-height: 1.5; padding-left: 16px; position: relative; }
+  .bold .s-content .bullet::before { content: ""; position: absolute; left: 0; top: 4px; width: 8px; height: 8px; background: #FF3366; }
+  .bold .s-content .bullet strong { color: #000; }
+
+  .bold .s-stat { background: #000; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .bold .s-stat .number { font-size: 76px; font-weight: 800; color: #FF3366; letter-spacing: -2px; }
+  .bold .s-stat .label { color: #666; margin-top: 4px; text-transform: uppercase; letter-spacing: 2px; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<h1>Strategy Slides — Style Preview</h1>
+<p class="subtitle">Seven templates. Serif and sans-serif pairings. Same content, different personality.</p>
+
+<!-- ════ 1. EDITORIAL ════ -->
+<div class="style-section editorial">
+  <div class="style-header">
+    <span class="style-name">Editorial</span>
+    <span class="style-desc">DM Serif Display + DM Sans — Magazine feel. Sophisticated but readable.</span>
+  </div>
+  <div class="swatches">
+    <div class="swatch-group"><div class="swatch" style="background:#1a1a2e"></div><div class="swatch-label">#1a1a2e</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#e63946"></div><div class="swatch-label">#e63946</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#f4a261"></div><div class="swatch-label">#f4a261</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#fefefe; border:1px solid #ddd"></div><div class="swatch-label">#fefefe</div></div>
+  </div>
+  <div class="slides">
+    <div class="slide s-title">
+      <div class="accent-stripe"></div>
+      <h2>Mobile-First Strategy<br>for Growth</h2>
+      <p>Presented to Executive Team &mdash; April 2026</p>
+      <span class="slide-label" style="color:rgba(255,255,255,0.25)">Title</span>
+    </div>
+    <div class="slide s-exec">
+      <h2>Shift 60% of development resources to mobile to capture $48M in unrealized revenue</h2>
+      <div class="insight"><span class="insight-num">1</span><div><span class="insight-label">Mobile traffic grew 3x</span> but conversion is half of desktop</div></div>
+      <div class="insight"><span class="insight-num">2</span><div><span class="insight-label">Top 3 competitors shipped</span> native apps in the last 12 months</div></div>
+      <div class="insight"><span class="insight-num">3</span><div><span class="insight-label">ROI model shows</span> $48M incremental revenue over 18 months</div></div>
+      <span class="slide-label" style="color:#ccc">Exec Summary</span>
+    </div>
+    <div class="slide s-content">
+      <h2>Mobile traffic grew 3x but conversion is half of desktop</h2>
+      <div class="bullet"><strong>Traffic shift:</strong> Mobile went from 28% to 67% of total sessions in 18 months</div>
+      <div class="bullet"><strong>Conversion gap:</strong> Desktop converts at 4.2%, mobile at 1.9%</div>
+      <div class="bullet"><strong>Cart abandonment:</strong> 73% on mobile vs 41% on desktop</div>
+      <div class="bullet"><strong>Revenue impact:</strong> Current mobile traffic at desktop rates = $48M additional annual revenue</div>
+      <span class="slide-label" style="color:#ccc">Content</span>
+    </div>
+    <div class="slide s-stat">
+      <div class="number">3x</div>
+      <div class="label">Mobile traffic growth in 18 months</div>
+      <span class="slide-label" style="color:rgba(255,255,255,0.2)">Stat</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════ 2. BOARDROOM ════ -->
+<div class="style-section boardroom">
+  <div class="style-header">
+    <span class="style-name">Boardroom</span>
+    <span class="style-desc">Playfair Display + Libre Franklin — Deep green, gold accents. Old money energy.</span>
+  </div>
+  <div class="swatches">
+    <div class="swatch-group"><div class="swatch" style="background:#1B3A2D"></div><div class="swatch-label">#1B3A2D</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#C5975B"></div><div class="swatch-label">#C5975B</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#444"></div><div class="swatch-label">#444444</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#F7F5F0; border:1px solid #ddd"></div><div class="swatch-label">#F7F5F0</div></div>
+  </div>
+  <div class="slides">
+    <div class="slide s-title">
+      <h2>Mobile-First Strategy<br>for Growth</h2>
+      <p>Presented to Executive Team &mdash; April 2026</p>
+      <div class="gold-rule"></div>
+      <span class="slide-label" style="color:rgba(255,255,255,0.25)">Title</span>
+    </div>
+    <div class="slide s-exec">
+      <h2>Shift 60% of development resources to mobile to capture $48M in unrealized revenue</h2>
+      <div class="insight"><span class="insight-num">1</span><div><span class="insight-label">Mobile traffic grew 3x</span> but conversion is half of desktop</div></div>
+      <div class="insight"><span class="insight-num">2</span><div><span class="insight-label">Top 3 competitors shipped</span> native apps in the last 12 months</div></div>
+      <div class="insight"><span class="insight-num">3</span><div><span class="insight-label">ROI model shows</span> $48M incremental revenue over 18 months</div></div>
+      <span class="slide-label" style="color:#bbb">Exec Summary</span>
+    </div>
+    <div class="slide s-content">
+      <h2>Mobile traffic grew 3x but conversion is half of desktop</h2>
+      <div class="bullet"><strong>Traffic shift:</strong> Mobile went from 28% to 67% of total sessions in 18 months</div>
+      <div class="bullet"><strong>Conversion gap:</strong> Desktop converts at 4.2%, mobile at 1.9%</div>
+      <div class="bullet"><strong>Cart abandonment:</strong> 73% on mobile vs 41% on desktop</div>
+      <div class="bullet"><strong>Revenue impact:</strong> Current mobile traffic at desktop rates = $48M additional annual revenue</div>
+      <span class="slide-label" style="color:#bbb">Content</span>
+    </div>
+    <div class="slide s-stat">
+      <div class="number">3x</div>
+      <div class="label">Mobile traffic growth in 18 months</div>
+      <span class="slide-label" style="color:rgba(247,245,240,0.25)">Stat</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════ 3. INK ════ -->
+<div class="style-section ink">
+  <div class="style-header">
+    <span class="style-name">Ink</span>
+    <span class="style-desc">Fraunces + Inter — Black and white. Literary. Let the words do the work.</span>
+  </div>
+  <div class="swatches">
+    <div class="swatch-group"><div class="swatch" style="background:#111"></div><div class="swatch-label">#111111</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#fff; border:1px solid #ccc"></div><div class="swatch-label">#ffffff</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#999"></div><div class="swatch-label">#999999</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#e0e0e0"></div><div class="swatch-label">#e0e0e0</div></div>
+  </div>
+  <div class="slides">
+    <div class="slide s-title">
+      <h2>Mobile-First Strategy<br>for Growth</h2>
+      <p>Presented to Executive Team &mdash; April 2026</p>
+      <div class="dot-accent"></div>
+      <span class="slide-label" style="color:#ccc">Title</span>
+    </div>
+    <div class="slide s-exec">
+      <h2>Shift 60% of development resources to mobile to capture $48M in unrealized revenue</h2>
+      <div class="insight"><span class="insight-num">1</span><div><span class="insight-label">Mobile traffic grew 3x</span> but conversion is half of desktop</div></div>
+      <div class="insight"><span class="insight-num">2</span><div><span class="insight-label">Top 3 competitors shipped</span> native apps in the last 12 months</div></div>
+      <div class="insight"><span class="insight-num">3</span><div><span class="insight-label">ROI model shows</span> $48M incremental revenue over 18 months</div></div>
+      <span class="slide-label" style="color:#ccc">Exec Summary</span>
+    </div>
+    <div class="slide s-content">
+      <h2>Mobile traffic grew 3x but conversion is half of desktop</h2>
+      <div class="bullet"><strong>Traffic shift:</strong> Mobile went from 28% to 67% of total sessions in 18 months</div>
+      <div class="bullet"><strong>Conversion gap:</strong> Desktop converts at 4.2%, mobile at 1.9%</div>
+      <div class="bullet"><strong>Cart abandonment:</strong> 73% on mobile vs 41% on desktop</div>
+      <div class="bullet"><strong>Revenue impact:</strong> Current mobile traffic at desktop rates = $48M additional annual revenue</div>
+      <span class="slide-label" style="color:#ccc">Content</span>
+    </div>
+    <div class="slide s-stat">
+      <div class="number">3x</div>
+      <div class="label">Mobile traffic growth in 18 months</div>
+      <span class="slide-label" style="color:rgba(255,255,255,0.25)">Stat</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════ 4. MIDNIGHT ════ -->
+<div class="style-section midnight">
+  <div class="style-header">
+    <span class="style-name">Midnight</span>
+    <span class="style-desc">Lora + Inter — Dark mode. Amber accents. Late-night strategy session.</span>
+  </div>
+  <div class="swatches">
+    <div class="swatch-group"><div class="swatch" style="background:#0f0f14"></div><div class="swatch-label">#0f0f14</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#D4A843"></div><div class="swatch-label">#D4A843</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#c8c0aa"></div><div class="swatch-label">#c8c0aa</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#f0ead6; border:1px solid #ddd"></div><div class="swatch-label">#f0ead6</div></div>
+  </div>
+  <div class="slides">
+    <div class="slide s-title">
+      <div class="amber-line"></div>
+      <h2>Mobile-First Strategy<br>for Growth</h2>
+      <p>Presented to Executive Team &mdash; April 2026</p>
+      <span class="slide-label" style="color:rgba(240,234,214,0.2)">Title</span>
+    </div>
+    <div class="slide s-exec">
+      <h2>Shift 60% of development resources to mobile to capture $48M in unrealized revenue</h2>
+      <div class="insight"><span class="insight-num">1</span><div><span class="insight-label">Mobile traffic grew 3x</span> but conversion is half of desktop</div></div>
+      <div class="insight"><span class="insight-num">2</span><div><span class="insight-label">Top 3 competitors shipped</span> native apps in the last 12 months</div></div>
+      <div class="insight"><span class="insight-num">3</span><div><span class="insight-label">ROI model shows</span> $48M incremental revenue over 18 months</div></div>
+      <span class="slide-label" style="color:rgba(240,234,214,0.2)">Exec Summary</span>
+    </div>
+    <div class="slide s-content">
+      <h2>Mobile traffic grew 3x but conversion is half of desktop</h2>
+      <div class="bullet"><strong>Traffic shift:</strong> Mobile went from 28% to 67% of total sessions in 18 months</div>
+      <div class="bullet"><strong>Conversion gap:</strong> Desktop converts at 4.2%, mobile at 1.9%</div>
+      <div class="bullet"><strong>Cart abandonment:</strong> 73% on mobile vs 41% on desktop</div>
+      <div class="bullet"><strong>Revenue impact:</strong> Current mobile traffic at desktop rates = $48M additional annual revenue</div>
+      <span class="slide-label" style="color:rgba(240,234,214,0.2)">Content</span>
+    </div>
+    <div class="slide s-stat">
+      <div class="number">3x</div>
+      <div class="label">Mobile traffic growth in 18 months</div>
+      <span class="slide-label" style="color:rgba(240,234,214,0.15)">Stat</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════ 5. STUDIO ════ -->
+<div class="style-section studio">
+  <div class="style-header">
+    <span class="style-name">Studio</span>
+    <span class="style-desc">Instrument Serif (italic) + Space Grotesk — Indigo gradient. Creative strategy.</span>
+  </div>
+  <div class="swatches">
+    <div class="swatch-group"><div class="swatch" style="background:#2d1b69"></div><div class="swatch-label">#2d1b69</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#8b5cf6"></div><div class="swatch-label">#8b5cf6</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#444"></div><div class="swatch-label">#444444</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#fafafa; border:1px solid #ddd"></div><div class="swatch-label">#fafafa</div></div>
+  </div>
+  <div class="slides">
+    <div class="slide s-title">
+      <div class="glow"></div>
+      <h2>Mobile-First Strategy<br>for Growth</h2>
+      <p>Presented to Executive Team &mdash; April 2026</p>
+      <span class="slide-label" style="color:rgba(255,255,255,0.2)">Title</span>
+    </div>
+    <div class="slide s-exec">
+      <h2>Shift 60% of development resources to mobile to capture $48M in unrealized revenue</h2>
+      <div class="insight"><span class="insight-num">1</span><div><span class="insight-label">Mobile traffic grew 3x</span> but conversion is half of desktop</div></div>
+      <div class="insight"><span class="insight-num">2</span><div><span class="insight-label">Top 3 competitors shipped</span> native apps in the last 12 months</div></div>
+      <div class="insight"><span class="insight-num">3</span><div><span class="insight-label">ROI model shows</span> $48M incremental revenue over 18 months</div></div>
+      <span class="slide-label" style="color:#ccc">Exec Summary</span>
+    </div>
+    <div class="slide s-content">
+      <h2>Mobile traffic grew 3x but conversion is half of desktop</h2>
+      <div class="bullet"><strong>Traffic shift:</strong> Mobile went from 28% to 67% of total sessions in 18 months</div>
+      <div class="bullet"><strong>Conversion gap:</strong> Desktop converts at 4.2%, mobile at 1.9%</div>
+      <div class="bullet"><strong>Cart abandonment:</strong> 73% on mobile vs 41% on desktop</div>
+      <div class="bullet"><strong>Revenue impact:</strong> Current mobile traffic at desktop rates = $48M additional annual revenue</div>
+      <span class="slide-label" style="color:#ccc">Content</span>
+    </div>
+    <div class="slide s-stat">
+      <div class="number">3x</div>
+      <div class="label">Mobile traffic growth in 18 months</div>
+      <span class="slide-label" style="color:rgba(255,255,255,0.2)">Stat</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════ 6. EARTH ════ -->
+<div class="style-section earth">
+  <div class="style-header">
+    <span class="style-name">Earth</span>
+    <span class="style-desc">Cormorant Garamond + DM Sans — Warm browns, terracotta. Grounded and human.</span>
+  </div>
+  <div class="swatches">
+    <div class="swatch-group"><div class="swatch" style="background:#3c2415"></div><div class="swatch-label">#3c2415</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#C87941"></div><div class="swatch-label">#C87941</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#4a3f35"></div><div class="swatch-label">#4a3f35</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#faf6f1; border:1px solid #ddd"></div><div class="swatch-label">#faf6f1</div></div>
+  </div>
+  <div class="slides">
+    <div class="slide s-title">
+      <h2>Mobile-First Strategy<br>for Growth</h2>
+      <p>Presented to Executive Team &mdash; April 2026</p>
+      <div class="terracotta-bar"></div>
+      <span class="slide-label" style="color:rgba(245,235,224,0.25)">Title</span>
+    </div>
+    <div class="slide s-exec">
+      <h2>Shift 60% of development resources to mobile to capture $48M in unrealized revenue</h2>
+      <div class="insight"><span class="insight-num">1</span><div><span class="insight-label">Mobile traffic grew 3x</span> but conversion is half of desktop</div></div>
+      <div class="insight"><span class="insight-num">2</span><div><span class="insight-label">Top 3 competitors shipped</span> native apps in the last 12 months</div></div>
+      <div class="insight"><span class="insight-num">3</span><div><span class="insight-label">ROI model shows</span> $48M incremental revenue over 18 months</div></div>
+      <span class="slide-label" style="color:#bbb">Exec Summary</span>
+    </div>
+    <div class="slide s-content">
+      <h2>Mobile traffic grew 3x but conversion is half of desktop</h2>
+      <div class="bullet"><strong>Traffic shift:</strong> Mobile went from 28% to 67% of total sessions in 18 months</div>
+      <div class="bullet"><strong>Conversion gap:</strong> Desktop converts at 4.2%, mobile at 1.9%</div>
+      <div class="bullet"><strong>Cart abandonment:</strong> 73% on mobile vs 41% on desktop</div>
+      <div class="bullet"><strong>Revenue impact:</strong> Current mobile traffic at desktop rates = $48M additional annual revenue</div>
+      <span class="slide-label" style="color:#bbb">Content</span>
+    </div>
+    <div class="slide s-stat">
+      <div class="number">3x</div>
+      <div class="label">Mobile traffic growth in 18 months</div>
+      <span class="slide-label" style="color:rgba(245,235,224,0.2)">Stat</span>
+    </div>
+  </div>
+</div>
+
+<!-- ════ 7. BOLD CORPORATE ════ -->
+<div class="style-section bold">
+  <div class="style-header">
+    <span class="style-name">Bold Corporate</span>
+    <span class="style-desc">Montserrat — Black / coral. High contrast. The only pure sans-serif template.</span>
+  </div>
+  <div class="swatches">
+    <div class="swatch-group"><div class="swatch" style="background:#000"></div><div class="swatch-label">#000000</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#FF3366"></div><div class="swatch-label">#FF3366</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#333"></div><div class="swatch-label">#333333</div></div>
+    <div class="swatch-group"><div class="swatch" style="background:#F8F8F8; border:1px solid #ddd"></div><div class="swatch-label">#F8F8F8</div></div>
+  </div>
+  <div class="slides">
+    <div class="slide s-title">
+      <div class="accent-bar"></div>
+      <h2>Mobile-First Strategy<br>for Growth</h2>
+      <p>Presented to Executive Team &mdash; April 2026</p>
+      <span class="slide-label" style="color:rgba(255,255,255,0.2)">Title</span>
+    </div>
+    <div class="slide s-exec">
+      <h2>Shift 60% of development resources to mobile to capture $48M in unrealized revenue</h2>
+      <div class="insight"><span class="insight-num">1</span><div><span class="insight-label">Mobile traffic grew 3x</span> but conversion is half of desktop</div></div>
+      <div class="insight"><span class="insight-num">2</span><div><span class="insight-label">Top 3 competitors shipped</span> native apps in the last 12 months</div></div>
+      <div class="insight"><span class="insight-num">3</span><div><span class="insight-label">ROI model shows</span> $48M incremental revenue over 18 months</div></div>
+      <span class="slide-label" style="color:#bbb">Exec Summary</span>
+    </div>
+    <div class="slide s-content">
+      <h2>Mobile traffic grew 3x but conversion is half of desktop</h2>
+      <div class="bullet"><strong>Traffic shift:</strong> Mobile went from 28% to 67% of total sessions in 18 months</div>
+      <div class="bullet"><strong>Conversion gap:</strong> Desktop converts at 4.2%, mobile at 1.9%</div>
+      <div class="bullet"><strong>Cart abandonment:</strong> 73% on mobile vs 41% on desktop</div>
+      <div class="bullet"><strong>Revenue impact:</strong> Current mobile traffic at desktop rates = $48M additional annual revenue</div>
+      <span class="slide-label" style="color:#bbb">Content</span>
+    </div>
+    <div class="slide s-stat">
+      <div class="number">3x</div>
+      <div class="label">Mobile traffic growth in 18 months</div>
+      <span class="slide-label" style="color:rgba(255,255,255,0.2)">Stat</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
