@@ -125,6 +125,10 @@ These feel like they're trying to land hard but signal effort instead. If the th
 ### Content Patterns
 
 **1. Significance inflation.** Puffing up importance with "marks a pivotal moment," "stands as a testament," "underscores its enduring legacy," "reflects broader trends," "sets the stage for." Just say what happened.
+
+**1b. Forced metaphors on data.** Don't personify numbers or give data human actions. Chapters don't "absorb" editing. Months aren't "engines." Hours aren't "cost." Say what happened plainly: "Chapter 2 required the most editing," "Most writing happened in February," "Draft 6 took 40 hours."
+
+**1c. Awkward verb-noun pairings.** Use verbs with their natural objects. You "spend" hours, not "cost" them. You "do" editing, things don't "absorb" it. Read the sentence out loud -- if the pairing sounds unusual, it's wrong.
 - Bad: "This initiative marks a pivotal moment in the evolution of regional governance."
 - Good: "The office was created to collect regional statistics independently from the national agency."
 

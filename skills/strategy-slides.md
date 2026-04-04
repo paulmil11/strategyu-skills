@@ -45,7 +45,7 @@ Direct is the default. Switch to indirect when you sense resistance.
 
 ### The Three Principles of Flow
 
-**Vertical Flow:** The title of every slide is the takeaway. Content below proves it. Never use a label as a title.
+**Vertical Flow:** The title of every slide is the takeaway. Content below proves it. Never use a label as a title. Never put the takeaway at the bottom of a slide in a "key takeaway" box -- the insight leads the page, it doesn't conclude it. No "takeaway boxes," "key insight" callouts, or summary strips at the bottom. The title IS the takeaway.
 
 "Q3 Revenue" tells nothing. "Q3 revenue grew 22%, driven by enterprise expansion" tells everything.
 
@@ -56,6 +56,12 @@ Title refinement steps:
 4. "Profitability increased for the first time in 5 years due to supply chain investments" -> specific, surprising, actionable
 
 Most people stop at step 1 or 2. Push to step 4.
+
+**Title language rules:**
+- Use plain verbs with their natural objects. "Draft 6 took more hours than writing the entire book" not "Draft 6 cost more hours." Hours aren't currency -- you don't "cost" them.
+- Don't personify data. Chapters don't "absorb" editing. Months aren't "engines." Say what happened: "Chapter 2 required the most editing" or "Most writing happened in February and May."
+- Don't force metaphors onto numbers. If the data is "February had the most writing hours," say that. Making it clever ("February was the engine month") obscures the point.
+- Read the title out loud. If it sounds like something a person would actually say to a colleague, keep it. If it sounds like a headline trying too hard, rewrite it plainly.
 
 **Horizontal Flow:** Slide titles, read in sequence, must tell a coherent story. Copy all titles into a document and read them. If they don't make sense without body content, fix the titles or the sequencing.
 
@@ -91,7 +97,7 @@ Three default chart types (cover 80-90% of needs):
 - **Column charts:** Compare across categories or over time
 - **Line charts:** Show trends over time
 
-Avoid pie charts. The human eye is bad at comparing areas and angles.
+**Never use pie charts.** The human eye is bad at comparing areas and angles. A column chart always shows the same data more clearly. No exceptions.
 
 Before finalizing any chart:
 - Does the chart title match what the chart actually shows?
@@ -441,7 +447,7 @@ Run these on the finished deck:
 - [ ] One idea per slide
 - [ ] All insights are MECE
 - [ ] Chart titles match what charts show
-- [ ] No pie charts (unless >50% dominance)
+- [ ] No pie charts (never -- use column charts instead)
 - [ ] No undefined abstract terms
 - [ ] Each slide stands alone (will be forwarded without context)
 - [ ] Emotional register is intentional
@@ -508,6 +514,10 @@ Cut on sight:
 **Structural tells.** No perfect parallel structure in every list. Depth follows importance, not template.
 
 **Significance inflation.** Say what happened, not that it "marks a pivotal moment."
+
+**Forced metaphors on data.** Don't personify numbers or give data human actions. Chapters don't "absorb" editing. Months aren't "engines." Hours aren't "cost." Say what happened plainly: "Chapter 2 required the most editing," "Most writing happened in February," "Draft 6 took 40 hours."
+
+**Awkward verb-noun pairings.** Use verbs with their natural objects. You "spend" hours, not "cost" them. You "do" editing, things don't "absorb" it. If the pairing sounds unusual, it's wrong.
 
 **Copula avoidance.** Things can just "be" things.
 

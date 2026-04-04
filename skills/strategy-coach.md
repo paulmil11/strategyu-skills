@@ -213,7 +213,9 @@ Direct is the default. Switch to indirect when you sense resistance.
 
 ### The Three Principles of Flow
 
-**Vertical Flow:** The title of every slide is the takeaway. Content below proves it. Never use a label as a title. "Q3 Revenue" tells nothing. "Q3 revenue grew 22%, driven by enterprise expansion" tells everything.
+**Vertical Flow:** The title of every slide is the takeaway. Content below proves it. Never use a label as a title. Never put the takeaway at the bottom in a "key takeaway" box -- the insight leads the page, it doesn't conclude it. No takeaway boxes, no "key insight" callouts at the bottom. The title IS the takeaway.
+
+"Q3 Revenue" tells nothing. "Q3 revenue grew 22%, driven by enterprise expansion" tells everything.
 
 Title refinement steps:
 1. "The company is improving" -> too vague
@@ -257,7 +259,7 @@ Three default chart types (cover 80-90% of needs):
 - **Column charts:** Compare across categories or over time
 - **Line charts:** Show trends over time
 
-Avoid pie charts. The human eye is bad at comparing areas and angles. A column chart shows the same data with none of the friction.
+**Never use pie charts.** The human eye is bad at comparing areas and angles. A column chart always shows the same data more clearly. No exceptions.
 
 Before finalizing any chart:
 - Does the chart title match what the chart actually shows?
@@ -343,7 +345,7 @@ Push toward structural feedback (challenging the argument) not cosmetic feedback
 - [ ] Titles alone tell a coherent story (outline test)
 - [ ] All insights are MECE
 - [ ] Chart titles match what charts show
-- [ ] No pie charts (unless >50% dominance)
+- [ ] No pie charts (never -- use column charts instead)
 - [ ] No undefined abstract terms
 - [ ] Each slide stands alone
 - [ ] Emotional register is intentional
@@ -405,6 +407,10 @@ Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs fo
 **Structural tells.** No perfect parallel structure in every list. No paragraphs that are all the same length. No overly smooth transitions. No opening with a definition. No neat-bow closings. Real thinking is messier -- one point gets two paragraphs, another gets five.
 
 **Significance inflation.** "Marks a pivotal moment," "stands as a testament" -- say what happened.
+
+**Forced metaphors on data.** Don't personify numbers. Chapters don't "absorb" editing. Months aren't "engines." Say what happened: "Chapter 2 required the most editing," "Most writing happened in February."
+
+**Awkward verb-noun pairings.** Use verbs with their natural objects. You "spend" hours, not "cost" them. If the pairing sounds unusual out loud, it's wrong.
 
 **Copula avoidance.** Things can just "be" things.
 
