@@ -29,7 +29,7 @@
   -->
 
   <!-- ═══ ROW 1: THINK ═══ -->
-  <text x="48" y="106" font-size="11" font-weight="700" fill="#b0a898" letter-spacing="3">THINK</text>
+  <text x="48" y="106" font-size="11" font-weight="700" fill="#7a7060" letter-spacing="3">THINK</text>
 
   <!-- Problem Framer (CT=118) -->
   <rect x="48" y="118" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
@@ -67,8 +67,11 @@
   <rect x="600" y="232" width="110" height="18" rx="9" fill="#f0fdf9"/>
   <text x="655" y="244" font-size="8" fill="#2A9D8F" text-anchor="middle" font-weight="600">Label-Sort-Insight</text>
 
+  <!-- Line under THINK spanning both cards -->
+  <line x1="48" y1="108" x2="848" y2="108" stroke="#ddd8d0" stroke-width="1"/>
+
   <!-- ═══ ROW 2: COMMUNICATE ═══ -->
-  <text x="48" y="296" font-size="11" font-weight="700" fill="#b0a898" letter-spacing="3">COMMUNICATE</text>
+  <text x="48" y="296" font-size="11" font-weight="700" fill="#7a7060" letter-spacing="3">COMMUNICATE</text>
 
   <!-- Communicator (CT=308) -->
   <rect x="48" y="308" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
@@ -108,9 +111,17 @@
   <rect x="666" y="422" width="40" height="18" rx="9" fill="#f0f5f7"/>
   <text x="686" y="434" font-size="8" fill="#264653" text-anchor="middle" font-weight="600">PPTX</text>
 
+  <!-- Line under COMMUNICATE spanning both cards -->
+  <line x1="48" y1="298" x2="848" y2="298" stroke="#ddd8d0" stroke-width="1"/>
+
   <!-- ═══ ROW 3: WRITE + ALL-IN-ONE ═══ -->
-  <text x="48" y="486" font-size="11" font-weight="700" fill="#b0a898" letter-spacing="3">WRITE</text>
-  <text x="464" y="486" font-size="11" font-weight="700" fill="#b0a898" letter-spacing="3">ALL-IN-ONE</text>
+  <text x="48" y="486" font-size="11" font-weight="700" fill="#7a7060" letter-spacing="3">WRITE</text>
+  <text x="464" y="486" font-size="11" font-weight="700" fill="#7a7060" letter-spacing="3">ALL-IN-ONE</text>
+
+  <!-- Line under WRITE -->
+  <line x1="48" y1="488" x2="432" y2="488" stroke="#ddd8d0" stroke-width="1"/>
+  <!-- Line under ALL-IN-ONE -->
+  <line x1="464" y1="488" x2="848" y2="488" stroke="#ddd8d0" stroke-width="1"/>
 
   <!-- Strategy Writing (CT=498) -->
   <rect x="48" y="498" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
