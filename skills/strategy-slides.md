@@ -1,33 +1,152 @@
 ---
 name: strategy-slides
 description: >
-  Build actual PowerPoint slide decks from structured arguments. Handles PPTX
-  file creation, slide layout, formatting, charts, and visual hierarchy.
-  Takes output from strategy-coach or structure-synthesize and turns it into
-  a real deck file.
+  Build strategy presentations end-to-end. Covers slide design principles
+  (vertical/horizontal flow, ten-second test, sequencing, charts, audience
+  tailoring, memorability) AND actual PPTX file creation with templates.
+  Self-contained -- no other skill needed.
 trigger: >
-  Use when the user has a structured argument, outline, or ghost deck and needs
-  an actual .pptx file built. Trigger on "build the slides," "make the deck,"
-  "create the PowerPoint," "turn this into slides," or any request for a
-  physical slide file. Also use when the user wants to edit, reformat, or
-  fix an existing .pptx file.
+  Use when the user wants to build a presentation, create slides, make a deck,
+  improve an existing deck, or anything involving PowerPoint. Trigger on "build
+  the slides," "make the deck," "create the PowerPoint," "turn this into slides,"
+  "help me with my presentation," "I need to present to my boss," "critique my
+  deck," or any slide-related request.
 ---
 
 # Strategy Slides
 
-You build actual PowerPoint files from structured arguments. You handle layout, formatting, visual hierarchy, and chart placeholders. The thinking and writing craft come from `/strategy-coach` -- this skill is purely about producing the artifact.
+You build strategy presentations from argument to finished .pptx file. You handle the slide design principles (flow, sequencing, memorability) AND the technical PPTX creation. Self-contained.
 
 ## Before Building
 
-Confirm you have:
-1. **A ghost deck or outline** -- slide titles (insight statements, not labels) with supporting points
-2. **The audience and objective** -- these determine layout density, language level, and visual style
-3. **The document type:**
+Ask about **audience** and **objective** first. These determine every choice downstream.
+
+Then confirm you have:
+1. **A structured argument** -- If the user has raw data or a vague topic, help them build a pyramid first (main idea + 3 insights + evidence). Use `/structure-synthesize` or `/problem-framer` if the thinking isn't done yet.
+2. **The document type:**
    - **Live presentation** -- minimal text, large visuals, under 20 words per slide
    - **Reading deck / deliverable** -- more text, self-explanatory, can include detailed analysis
    - **Proposal / update** -- brief, status-focused
 
-If the user doesn't have these, point them to `/strategy-coach` first.
+---
+
+## Slide Design Principles
+
+### Choosing Your Sequencing Approach
+
+| Approach | When | Structure |
+|---|---|---|
+| **Direct** | Audience agrees; urgent; "just tell me" | Recommendation -> Context -> Arguments + Evidence |
+| **Indirect** | Skeptical or hostile audience | Situation + Complication -> Key Ideas -> Recommendation |
+| **Concerned** | Everyone agrees on the problem | Complication -> Brief Situation -> Insights -> Recommendation |
+| **Aggressive** | High trust; everyone aligned; urgent | Question -> Recommendation |
+
+Direct is the default. Switch to indirect when you sense resistance.
+
+### The Three Principles of Flow
+
+**Vertical Flow:** The title of every slide is the takeaway. Content below proves it. Never use a label as a title.
+
+"Q3 Revenue" tells nothing. "Q3 revenue grew 22%, driven by enterprise expansion" tells everything.
+
+Title refinement steps:
+1. "The company is improving" -> too vague
+2. "The company is growing revenue and shrinking costs" -> still generic
+3. "Profitability is increasing" -> cleaner, missing context
+4. "Profitability increased for the first time in 5 years due to supply chain investments" -> specific, surprising, actionable
+
+Most people stop at step 1 or 2. Push to step 4.
+
+**Horizontal Flow:** Slide titles, read in sequence, must tell a coherent story. Copy all titles into a document and read them. If they don't make sense without body content, fix the titles or the sequencing.
+
+**Overall Flow:** The deck maps to your pyramid:
+1. Title Slide
+2. Executive Summary (main recommendation + 3 insights)
+3. Section Divider - Insight 1
+4. 2-4 slides proving Insight 1
+5. Section Divider - Insight 2
+6. 2-4 slides proving Insight 2
+7. Section Divider - Insight 3
+8. 2-4 slides proving Insight 3
+9. Recommendation / Next Steps
+10. Appendix
+
+### The Ten-Second Test
+
+Show any slide to someone for 10 seconds. Can they tell you:
+1. What it's about?
+2. Why it matters?
+3. What they should think or do?
+
+If any are unclear, rewrite.
+
+### Charts & Data Visualization
+
+Write the message the chart should convey before building it. The chart's only job is to prove the slide title.
+
+Three default chart types (cover 80-90% of needs):
+- **Bar charts:** Compare items at a point in time
+- **Column charts:** Compare across categories or over time
+- **Line charts:** Show trends over time
+
+Avoid pie charts. The human eye is bad at comparing areas and angles.
+
+Before finalizing any chart:
+- Does the chart title match what the chart actually shows?
+- Is the most important number the most visually prominent?
+- Is there anything that doesn't support the title? (Cut it)
+- If the title mentions a concept (e.g., "recession"), is it visually marked on the chart?
+
+Use **illustrative charts** when data is uncertain. Label them "Illustrative" and add footnotes about assumptions.
+
+### Tailoring to Audience Level
+
+| Level | Focus | What They Need |
+|---|---|---|
+| IC / Manager | Weekly tasks, deliverables | Concrete steps, clear owner, deadline |
+| Director / VP | Cross-functional results | Impact, tradeoffs, resource implications |
+| C-Suite / Board | Multi-year strategy, competition | So what for the business, competitive context, clear recommendation |
+
+For senior audiences: research how they talk about the business (earnings calls, annual reports). Use their language.
+
+### Making It Memorable (Carmen Simon)
+
+**Perceptive Mode:** Walk the audience through your discovery process, not just conclusions.
+
+**Cognitive Mode:** Make abstract terms concrete. "Improved sustainability" communicates nothing. "Cut carbon emissions 40% by 2026" communicates everything.
+
+**Affective Mode:** Every presentation should elicit a specific emotion. Four levers: move toward reward (hope), move away from reward (urgency), move away from pain (relief), move toward pain (adrenaline). Pick one before building.
+
+Ask: After this message, what should the audience *feel*? *think*? *do*?
+
+### Making It Stick
+
+- Repeat the main message 3 times: introduce, reinforce, close
+- People remember ~4 chunks max. Main recommendation + 3 insights = best case.
+- Plant action triggers: "Next time you're in a quarterly planning meeting, ask this question..."
+
+---
+
+## Critiquing Slides
+
+When reviewing a deck (yours or someone else's), check for these patterns:
+
+1. **Title promises growth, chart shows no growth data.** Title and visual must tell the same story.
+2. **Buzzwords with stock photos.** Remove images that don't directly illustrate the point.
+3. **Pretty Slide Syndrome.** Looks polished but says nothing. Ask: "What does this tell me to think or do?"
+4. **Concept in title not marked on chart.** If you mention "recession" or "inflection point," annotate it.
+5. **Hypothetical data presented as real.** Frame it honestly. Use "illustrative" charts.
+6. **Buzzwords masquerading as insight.** "Synergistic value creation" -> "We expect to lose $1.2B this year."
+
+### The EVO Feedback Framework
+
+- **Explanations:** Are there alternate interpretations? Could the audience read this differently?
+- **Versions:** Could a different chart type, layout, or framing work better?
+- **Opportunities:** What's missing? What insight is buried in the data?
+
+Push toward structural feedback (challenging the argument) not cosmetic feedback (challenging the font).
+
+---
 
 ## Slide Types and When to Use Them
 
@@ -310,45 +429,45 @@ For each slide:
 Run these on the finished deck:
 
 **Structural:**
+- [ ] Main message leads the deck, not buried at end
 - [ ] Executive summary present and complete
-- [ ] Titles alone tell a coherent story (copy them out and read in sequence)
+- [ ] 3 key insights (or a compelling reason for different number)
+- [ ] Every slide title is a takeaway, not a label
+- [ ] Titles alone tell a coherent story (horizontal flow test)
+- [ ] 10-second test passed on every slide
 - [ ] One idea per slide
-- [ ] Each slide passes the 10-second test
-- [ ] Section dividers separate major arguments
-- [ ] Appendix exists for backup detail
+- [ ] All insights are MECE
+- [ ] Chart titles match what charts show
+- [ ] No pie charts (unless >50% dominance)
+- [ ] No undefined abstract terms
+- [ ] Each slide stands alone (will be forwarded without context)
+- [ ] Emotional register is intentional
+- [ ] Key message repeated 3x across the deck
+- [ ] Deck tailored to audience's level and language
 
 **Visual:**
 - [ ] Consistent font sizes and weights throughout
 - [ ] Consistent spacing and alignment
 - [ ] Color used intentionally (accent for emphasis, gray for supporting)
 - [ ] No orphaned text or awkward line breaks
-- [ ] Charts have takeaway titles, not label titles
 - [ ] Stat callouts are large and prominent
 
-**Writing (apply strategy-writing rules):**
-- [ ] No AI vocabulary words
+**Writing:**
+- [ ] No banned vocabulary words
 - [ ] No significance inflation or false urgency
 - [ ] Active verbs, contractions, specific numbers
-- [ ] Sentence length varies
 - [ ] Every claim backed by evidence or a number
-- [ ] Read-aloud test passes
 
 ## Working With Existing Decks
 
 When the user gives you a .pptx to fix:
 
 1. Read the deck first
-2. Identify which slides fail the 10-second test
-3. Flag label titles that should be insight titles
-4. Check horizontal flow (do titles tell a story in sequence?)
-5. Propose fixes before making changes
-
-## Integration
-
-- `/strategy-coach` handles the thinking, structure, and writing craft
-- This skill (`/strategy-slides`) handles the PPTX file creation
-- Use both together: coach first to build the argument, slides to produce the artifact
-- If the user's outline is weak, send them back to the coach before building
+2. Check horizontal flow -- do titles tell a story in sequence?
+3. Run the ten-second test on every slide
+4. Flag label titles that should be insight titles
+5. Apply the EVO framework for structural feedback
+6. Propose fixes before making changes
 
 ---
 
