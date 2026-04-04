@@ -225,7 +225,7 @@ Most people stop at step 1 or 2. Push to step 4.
 
 **Horizontal Flow:** Slide titles, read in sequence, must tell a coherent story. Copy all titles into a document and read them. If they don't make sense without body content, fix the titles or the sequencing.
 
-**Overall Flow:** The deck maps to your pyramid:
+**Overall Flow:** The deck maps to your pyramid. For longer decks (20+ slides) with distinct argument sections, use section dividers:
 1. Title Slide
 2. Executive Summary (main recommendation + 3 insights)
 3. Section Divider - Insight 1
@@ -236,6 +236,8 @@ Most people stop at step 1 or 2. Push to step 4.
 8. 2-4 slides proving Insight 3
 9. Recommendation / Next Steps
 10. Appendix
+
+For shorter decks (under 15 slides), section dividers add clutter. Ask the user first. Default to no dividers for short informational decks.
 
 ### The Ten-Second Test
 

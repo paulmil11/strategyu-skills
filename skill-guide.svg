@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 720" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .bg { fill: #fafafa; }
+      .title { font-size: 26px; font-weight: 700; fill: #1a1a2e; }
+      .subtitle { font-size: 13px; fill: #888; }
+      .section-label { font-size: 10px; fill: #aaa; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; }
+      .card-title { font-size: 15px; font-weight: 700; fill: #fff; }
+      .card-cmd { font-size: 10px; fill: rgba(255,255,255,0.65); font-family: 'SF Mono', 'Fira Code', Consolas, monospace; }
+      .card-desc { font-size: 12px; fill: #444; }
+      .card-use { font-size: 11px; fill: #777; font-style: italic; }
+      .frameworks { font-size: 9.5px; fill: #999; font-family: 'SF Mono', 'Fira Code', Consolas, monospace; letter-spacing: 0.3px; }
+      .arrow { fill: none; stroke: #d0d0d0; stroke-width: 1.5; }
+      .arrow-head { fill: #d0d0d0; }
+      .footer { font-size: 10px; fill: #bbb; }
+      .coach-badge { font-size: 9px; fill: #1a1a2e; font-weight: 600; letter-spacing: 0.5px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="720" class="bg"/>
+
+  <!-- Title block -->
+  <text x="44" y="44" class="title">StrategyU Skills</text>
+  <text x="44" y="64" class="subtitle">Improve your thinking, writing, and communication with consulting frameworks</text>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- ROW 1: THINK                      -->
+  <!-- ══════════════════════════════════ -->
+  <text x="44" y="104" class="section-label">Think</text>
+
+  <!-- Card: Problem Framer -->
+  <rect x="44" y="116" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
+  <rect x="44" y="116" width="380" height="38" rx="10" fill="#E63946"/>
+  <rect x="44" y="140" width="380" height="14" fill="#E63946"/>
+  <text x="62" y="141" class="card-title">Problem Framer</text>
+  <text x="62" y="176" class="card-desc">Define the real problem. Build hypotheses</text>
+  <text x="62" y="192" class="card-desc">and MECE issue trees.</text>
+  <text x="62" y="216" class="card-use">"I have a messy situation and don't know where to start."</text>
+  <text x="62" y="248" class="frameworks">SCQA   Issue Trees   Hypothesis-Driven</text>
+  <!-- Command pill -->
+  <rect x="252" y="124" width="160" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
+  <text x="265" y="139" class="card-cmd">/problem-framer</text>
+
+  <!-- Card: Structure & Synthesize -->
+  <rect x="456" y="116" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
+  <rect x="456" y="116" width="380" height="38" rx="10" fill="#2A9D8F"/>
+  <rect x="456" y="140" width="380" height="14" fill="#2A9D8F"/>
+  <text x="474" y="141" class="card-title">Structure &amp; Synthesize</text>
+  <text x="474" y="176" class="card-desc">Turn raw data into structured arguments</text>
+  <text x="474" y="192" class="card-desc">with clear recommendations.</text>
+  <text x="474" y="216" class="card-use">"I have research but can't figure out what it means."</text>
+  <text x="474" y="248" class="frameworks">MECE   Pyramid Principle   Label-Sort-Insight</text>
+  <rect x="672" y="124" width="152" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
+  <text x="680" y="139" class="card-cmd">/structure-synthesize</text>
+
+  <!-- Arrow: card 1 -> card 2 -->
+  <line x1="424" y1="187" x2="454" y2="187" class="arrow"/>
+  <polygon points="452,183 460,187 452,191" class="arrow-head"/>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- ROW 2: COMMUNICATE                -->
+  <!-- ══════════════════════════════════ -->
+
+  <!-- Arrow down from row 1 -->
+  <line x1="234" y1="258" x2="234" y2="296" class="arrow"/>
+  <polygon points="230,294 234,302 238,294" class="arrow-head"/>
+  <line x1="646" y1="258" x2="646" y2="296" class="arrow"/>
+  <polygon points="642,294 646,302 650,294" class="arrow-head"/>
+
+  <text x="44" y="294" class="section-label">Communicate</text>
+
+  <!-- Card: Communicator -->
+  <rect x="44" y="306" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
+  <rect x="44" y="306" width="380" height="38" rx="10" fill="#457B9D"/>
+  <rect x="44" y="330" width="380" height="14" fill="#457B9D"/>
+  <text x="62" y="331" class="card-title">Communicator</text>
+  <text x="62" y="366" class="card-desc">Present arguments top-down. Choose</text>
+  <text x="62" y="382" class="card-desc">sequencing. Make it memorable.</text>
+  <text x="62" y="406" class="card-use">"I have the argument. How do I present it so it lands?"</text>
+  <text x="62" y="438" class="frameworks">Sequencing   Memorability   Ten-Second Test</text>
+  <rect x="228" y="314" width="184" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
+  <text x="236" y="329" class="card-cmd">/strategy-communicator</text>
+
+  <!-- Card: Strategy Slides -->
+  <rect x="456" y="306" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
+  <rect x="456" y="306" width="380" height="38" rx="10" fill="#264653"/>
+  <rect x="456" y="330" width="380" height="14" fill="#264653"/>
+  <text x="474" y="331" class="card-title">Strategy Slides</text>
+  <text x="474" y="366" class="card-desc">Build slide decks end-to-end. Design</text>
+  <text x="474" y="382" class="card-desc">principles + actual PPTX file creation.</text>
+  <text x="474" y="406" class="card-use">"Build me a deck." or "Critique my presentation."</text>
+  <text x="474" y="438" class="frameworks">Flow   Charts   Templates   7 Styles   PPTX</text>
+  <rect x="672" y="314" width="152" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
+  <text x="692" y="329" class="card-cmd">/strategy-slides</text>
+
+  <!-- Arrow: Comm 1 -> Comm 2 -->
+  <line x1="424" y1="377" x2="454" y2="377" class="arrow"/>
+  <polygon points="452,373 460,377 452,381" class="arrow-head"/>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- ROW 3: WRITE + COACH              -->
+  <!-- ══════════════════════════════════ -->
+
+  <!-- Arrow down from row 2 -->
+  <line x1="234" y1="448" x2="234" y2="486" class="arrow"/>
+  <polygon points="230,484 234,492 238,484" class="arrow-head"/>
+
+  <text x="44" y="484" class="section-label">Write</text>
+  <text x="456" y="484" class="section-label">All-in-one</text>
+
+  <!-- Card: Strategy Writing -->
+  <rect x="44" y="496" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
+  <rect x="44" y="496" width="380" height="38" rx="10" fill="#C87941"/>
+  <rect x="44" y="520" width="380" height="14" fill="#C87941"/>
+  <text x="62" y="521" class="card-title">Strategy Writing</text>
+  <text x="62" y="556" class="card-desc">Clean up any text. Eliminate AI patterns.</text>
+  <text x="62" y="572" class="card-desc">Enforce specificity and word economy.</text>
+  <text x="62" y="596" class="card-use">"Make this sound human." or "Check for AI patterns."</text>
+  <text x="62" y="628" class="frameworks">24 AI Patterns   Banned Vocab   Specificity</text>
+  <rect x="262" y="504" width="150" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
+  <text x="275" y="519" class="card-cmd">/strategy-writing</text>
+
+  <!-- Card: Strategy Coach -->
+  <rect x="456" y="496" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
+  <rect x="456" y="496" width="380" height="38" rx="10" fill="#1A1A2E"/>
+  <rect x="456" y="520" width="380" height="14" fill="#1A1A2E"/>
+  <text x="474" y="521" class="card-title">Strategy Coach</text>
+  <text x="474" y="556" class="card-desc">The full end-to-end skill. Combines all five</text>
+  <text x="474" y="572" class="card-desc">skills into one guided process.</text>
+  <text x="474" y="596" class="card-use">"Help me think through this whole thing from scratch."</text>
+  <text x="474" y="628" class="frameworks">SCQA   MECE   Pyramid   Sequencing   Writing   Feedback</text>
+  <rect x="692" y="504" width="132" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
+  <text x="710" y="519" class="card-cmd">/strategy-coach</text>
+
+  <!-- Dashed "contains all" indicator on coach -->
+  <rect x="452" y="492" width="388" height="150" rx="12" fill="none" stroke="#1A1A2E" stroke-width="1" stroke-dasharray="5,4" opacity="0.2"/>
+
+  <!-- Writing applies across label -->
+  <line x1="424" y1="567" x2="454" y2="567" class="arrow" stroke-dasharray="4,3"/>
+  <text x="430" y="556" style="font-size:8px; fill:#bbb; transform: rotate(-90deg); transform-origin: 430px 556px;">writing applies to all</text>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- FOOTER                            -->
+  <!-- ══════════════════════════════════ -->
+
+  <!-- How to start guide -->
+  <rect x="44" y="660" width="792" height="36" rx="8" fill="#f0f0f0"/>
+  <text x="62" y="682" style="font-size: 11px; fill: #666; font-weight: 600;">Not sure where to start?</text>
+  <text x="220" y="682" style="font-size: 11px; fill: #888;">Use /strategy-coach for guided end-to-end help, or pick a specific skill above.</text>
+
+  <text x="44" y="714" class="footer">strategyu.co  |  github.com/paulmil11/strategyu-skills</text>
+</svg>

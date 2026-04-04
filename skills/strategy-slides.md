@@ -59,7 +59,7 @@ Most people stop at step 1 or 2. Push to step 4.
 
 **Horizontal Flow:** Slide titles, read in sequence, must tell a coherent story. Copy all titles into a document and read them. If they don't make sense without body content, fix the titles or the sequencing.
 
-**Overall Flow:** The deck maps to your pyramid:
+**Overall Flow:** The deck maps to your pyramid. For longer decks (20+ slides) with distinct argument sections, use section dividers:
 1. Title Slide
 2. Executive Summary (main recommendation + 3 insights)
 3. Section Divider - Insight 1
@@ -70,6 +70,8 @@ Most people stop at step 1 or 2. Push to step 4.
 8. 2-4 slides proving Insight 3
 9. Recommendation / Next Steps
 10. Appendix
+
+For shorter decks (under 15 slides), section dividers add clutter. Ask the user: "This is a shorter deck -- do you want section dividers, or should the slides flow directly?" Default to no dividers for short informational decks.
 
 ### The Ten-Second Test
 
@@ -163,6 +165,7 @@ Push toward structural feedback (challenging the argument) not cosmetic feedback
 - One insight statement as the title
 - Optional 1-line subtitle adding context
 - Signals a new section of the argument
+- **When to use:** Only for longer decks (20+ slides) with 3+ distinct argument sections. For shorter decks or informational presentations, dividers waste slides and break flow. Ask the user before adding them.
 
 ### Content Slides (the majority)
 - Title = takeaway (insight statement, not a label)
@@ -420,7 +423,7 @@ For each slide:
 
 - Consistent spacing and alignment across all slides
 - Charts formatted with clear titles and annotations
-- Section dividers in place
+- Section dividers in place (if deck warrants them -- 20+ slides with distinct sections)
 - Slide numbers on all slides except title
 - Appendix clearly separated
 
