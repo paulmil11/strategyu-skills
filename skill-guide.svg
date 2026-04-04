@@ -1,153 +1,160 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 720" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
   <defs>
-    <style>
-      .bg { fill: #fafafa; }
-      .title { font-size: 26px; font-weight: 700; fill: #1a1a2e; }
-      .subtitle { font-size: 13px; fill: #888; }
-      .section-label { font-size: 10px; fill: #aaa; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; }
-      .card-title { font-size: 15px; font-weight: 700; fill: #fff; }
-      .card-cmd { font-size: 10px; fill: rgba(255,255,255,0.65); font-family: 'SF Mono', 'Fira Code', Consolas, monospace; }
-      .card-desc { font-size: 12px; fill: #444; }
-      .card-use { font-size: 11px; fill: #777; font-style: italic; }
-      .frameworks { font-size: 9.5px; fill: #999; font-family: 'SF Mono', 'Fira Code', Consolas, monospace; letter-spacing: 0.3px; }
-      .arrow { fill: none; stroke: #d0d0d0; stroke-width: 1.5; }
-      .arrow-head { fill: #d0d0d0; }
-      .footer { font-size: 10px; fill: #bbb; }
-      .coach-badge { font-size: 9px; fill: #1a1a2e; font-weight: 600; letter-spacing: 0.5px; }
-    </style>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+    <filter id="shadow-lg" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="880" height="720" class="bg"/>
+  <rect width="900" height="700" fill="#f5f5f0"/>
 
-  <!-- Title block -->
-  <text x="44" y="44" class="title">StrategyU Skills</text>
-  <text x="44" y="64" class="subtitle">Improve your thinking, writing, and communication with consulting frameworks</text>
+  <!-- Title area -->
+  <text x="48" y="46" font-size="30" font-weight="700" fill="#1a1a2e" letter-spacing="-0.5">StrategyU Skills</text>
+  <text x="48" y="68" font-size="13" fill="#888">Six tools for thinking, writing, and communicating like a strategy consultant</text>
 
-  <!-- ══════════════════════════════════ -->
-  <!-- ROW 1: THINK                      -->
-  <!-- ══════════════════════════════════ -->
-  <text x="44" y="104" class="section-label">Think</text>
+  <!--
+    CARD TEMPLATE (relative to card-top CT):
+    Outer rect:   CT, h=140, rx=10
+    Header rect:  CT, h=62, rx=10
+    Bridge rect:  CT+38, h=24
+    Title:        CT+30
+    Command:      CT+30, right-aligned
+    Subtitle:     CT+50
+    Body line 1:  CT+84
+    Body line 2:  CT+100
+    Tag pills:    CT+114
+    Card bottom:  CT+140
+  -->
 
-  <!-- Card: Problem Framer -->
-  <rect x="44" y="116" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
-  <rect x="44" y="116" width="380" height="38" rx="10" fill="#E63946"/>
-  <rect x="44" y="140" width="380" height="14" fill="#E63946"/>
-  <text x="62" y="141" class="card-title">Problem Framer</text>
-  <text x="62" y="176" class="card-desc">Define the real problem. Build hypotheses</text>
-  <text x="62" y="192" class="card-desc">and MECE issue trees.</text>
-  <text x="62" y="216" class="card-use">"I have a messy situation and don't know where to start."</text>
-  <text x="62" y="248" class="frameworks">SCQA   Issue Trees   Hypothesis-Driven</text>
-  <!-- Command pill -->
-  <rect x="252" y="124" width="160" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
-  <text x="265" y="139" class="card-cmd">/problem-framer</text>
+  <!-- ═══ ROW 1: THINK ═══ -->
+  <text x="48" y="106" font-size="11" font-weight="700" fill="#b0a898" letter-spacing="3">THINK</text>
 
-  <!-- Card: Structure & Synthesize -->
-  <rect x="456" y="116" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
-  <rect x="456" y="116" width="380" height="38" rx="10" fill="#2A9D8F"/>
-  <rect x="456" y="140" width="380" height="14" fill="#2A9D8F"/>
-  <text x="474" y="141" class="card-title">Structure &amp; Synthesize</text>
-  <text x="474" y="176" class="card-desc">Turn raw data into structured arguments</text>
-  <text x="474" y="192" class="card-desc">with clear recommendations.</text>
-  <text x="474" y="216" class="card-use">"I have research but can't figure out what it means."</text>
-  <text x="474" y="248" class="frameworks">MECE   Pyramid Principle   Label-Sort-Insight</text>
-  <rect x="672" y="124" width="152" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
-  <text x="680" y="139" class="card-cmd">/structure-synthesize</text>
+  <!-- Problem Framer (CT=118) -->
+  <rect x="48" y="118" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
+  <rect x="48" y="118" width="384" height="62" rx="10" fill="#E63946"/>
+  <rect x="48" y="156" width="384" height="24" fill="#E63946"/>
+  <text x="70" y="148" font-size="17" font-weight="700" fill="#fff">Problem Framer</text>
+  <text x="410" y="148" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/problem-framer</text>
+  <text x="70" y="168" font-size="11" fill="rgba(255,255,255,0.85)">Define problems and build issue trees</text>
 
-  <!-- Arrow: card 1 -> card 2 -->
-  <line x1="424" y1="187" x2="454" y2="187" class="arrow"/>
-  <polygon points="452,183 460,187 452,191" class="arrow-head"/>
+  <text x="70" y="202" font-size="12" fill="#555">Use SCQA to define the real problem, generate</text>
+  <text x="70" y="218" font-size="12" fill="#555">hypotheses, and break them into sub-questions.</text>
 
-  <!-- ══════════════════════════════════ -->
-  <!-- ROW 2: COMMUNICATE                -->
-  <!-- ══════════════════════════════════ -->
+  <rect x="70" y="232" width="46" height="18" rx="9" fill="#fef2f2"/>
+  <text x="93" y="244" font-size="8" fill="#E63946" text-anchor="middle" font-weight="600">SCQA</text>
+  <rect x="122" y="232" width="76" height="18" rx="9" fill="#fef2f2"/>
+  <text x="160" y="244" font-size="8" fill="#E63946" text-anchor="middle" font-weight="600">Issue Trees</text>
+  <rect x="204" y="232" width="72" height="18" rx="9" fill="#fef2f2"/>
+  <text x="240" y="244" font-size="8" fill="#E63946" text-anchor="middle" font-weight="600">Hypothesis</text>
 
-  <!-- Arrow down from row 1 -->
-  <line x1="234" y1="258" x2="234" y2="296" class="arrow"/>
-  <polygon points="230,294 234,302 238,294" class="arrow-head"/>
-  <line x1="646" y1="258" x2="646" y2="296" class="arrow"/>
-  <polygon points="642,294 646,302 650,294" class="arrow-head"/>
+  <!-- Structure & Synthesize (CT=118) -->
+  <rect x="464" y="118" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
+  <rect x="464" y="118" width="384" height="62" rx="10" fill="#2A9D8F"/>
+  <rect x="464" y="156" width="384" height="24" fill="#2A9D8F"/>
+  <text x="486" y="148" font-size="17" font-weight="700" fill="#fff">Structure &amp; Synthesize</text>
+  <text x="826" y="148" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/structure-synthesize</text>
+  <text x="486" y="168" font-size="11" fill="rgba(255,255,255,0.85)">Organize data into clear arguments</text>
 
-  <text x="44" y="294" class="section-label">Communicate</text>
+  <text x="486" y="202" font-size="12" fill="#555">Turn raw research into a pyramid: main idea,</text>
+  <text x="486" y="218" font-size="12" fill="#555">supporting insights, and evidence.</text>
 
-  <!-- Card: Communicator -->
-  <rect x="44" y="306" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
-  <rect x="44" y="306" width="380" height="38" rx="10" fill="#457B9D"/>
-  <rect x="44" y="330" width="380" height="14" fill="#457B9D"/>
-  <text x="62" y="331" class="card-title">Communicator</text>
-  <text x="62" y="366" class="card-desc">Present arguments top-down. Choose</text>
-  <text x="62" y="382" class="card-desc">sequencing. Make it memorable.</text>
-  <text x="62" y="406" class="card-use">"I have the argument. How do I present it so it lands?"</text>
-  <text x="62" y="438" class="frameworks">Sequencing   Memorability   Ten-Second Test</text>
-  <rect x="228" y="314" width="184" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
-  <text x="236" y="329" class="card-cmd">/strategy-communicator</text>
+  <rect x="486" y="232" width="44" height="18" rx="9" fill="#f0fdf9"/>
+  <text x="508" y="244" font-size="8" fill="#2A9D8F" text-anchor="middle" font-weight="600">MECE</text>
+  <rect x="536" y="232" width="58" height="18" rx="9" fill="#f0fdf9"/>
+  <text x="565" y="244" font-size="8" fill="#2A9D8F" text-anchor="middle" font-weight="600">Pyramid</text>
+  <rect x="600" y="232" width="110" height="18" rx="9" fill="#f0fdf9"/>
+  <text x="655" y="244" font-size="8" fill="#2A9D8F" text-anchor="middle" font-weight="600">Label-Sort-Insight</text>
 
-  <!-- Card: Strategy Slides -->
-  <rect x="456" y="306" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
-  <rect x="456" y="306" width="380" height="38" rx="10" fill="#264653"/>
-  <rect x="456" y="330" width="380" height="14" fill="#264653"/>
-  <text x="474" y="331" class="card-title">Strategy Slides</text>
-  <text x="474" y="366" class="card-desc">Build slide decks end-to-end. Design</text>
-  <text x="474" y="382" class="card-desc">principles + actual PPTX file creation.</text>
-  <text x="474" y="406" class="card-use">"Build me a deck." or "Critique my presentation."</text>
-  <text x="474" y="438" class="frameworks">Flow   Charts   Templates   7 Styles   PPTX</text>
-  <rect x="672" y="314" width="152" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
-  <text x="692" y="329" class="card-cmd">/strategy-slides</text>
+  <!-- ═══ ROW 2: COMMUNICATE ═══ -->
+  <text x="48" y="296" font-size="11" font-weight="700" fill="#b0a898" letter-spacing="3">COMMUNICATE</text>
 
-  <!-- Arrow: Comm 1 -> Comm 2 -->
-  <line x1="424" y1="377" x2="454" y2="377" class="arrow"/>
-  <polygon points="452,373 460,377 452,381" class="arrow-head"/>
+  <!-- Communicator (CT=308) -->
+  <rect x="48" y="308" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
+  <rect x="48" y="308" width="384" height="62" rx="10" fill="#457B9D"/>
+  <rect x="48" y="346" width="384" height="24" fill="#457B9D"/>
+  <text x="70" y="338" font-size="17" font-weight="700" fill="#fff">Communicator</text>
+  <text x="410" y="338" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/strategy-communicator</text>
+  <text x="70" y="358" font-size="11" fill="rgba(255,255,255,0.85)">Build memos, emails, and exec summaries</text>
 
-  <!-- ══════════════════════════════════ -->
-  <!-- ROW 3: WRITE + COACH              -->
-  <!-- ══════════════════════════════════ -->
+  <text x="70" y="392" font-size="12" fill="#555">Present arguments top-down. Choose the right</text>
+  <text x="70" y="408" font-size="12" fill="#555">sequencing for your audience. Make it stick.</text>
 
-  <!-- Arrow down from row 2 -->
-  <line x1="234" y1="448" x2="234" y2="486" class="arrow"/>
-  <polygon points="230,484 234,492 238,484" class="arrow-head"/>
+  <rect x="70" y="422" width="76" height="18" rx="9" fill="#eff6ff"/>
+  <text x="108" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Sequencing</text>
+  <rect x="152" y="422" width="84" height="18" rx="9" fill="#eff6ff"/>
+  <text x="194" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Memorability</text>
+  <rect x="242" y="422" width="96" height="18" rx="9" fill="#eff6ff"/>
+  <text x="290" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Ten-Second Test</text>
 
-  <text x="44" y="484" class="section-label">Write</text>
-  <text x="456" y="484" class="section-label">All-in-one</text>
+  <!-- Strategy Slides (CT=308) -->
+  <rect x="464" y="308" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
+  <rect x="464" y="308" width="384" height="62" rx="10" fill="#264653"/>
+  <rect x="464" y="346" width="384" height="24" fill="#264653"/>
+  <text x="486" y="338" font-size="17" font-weight="700" fill="#fff">Strategy Slides</text>
+  <text x="826" y="338" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/strategy-slides</text>
+  <text x="486" y="358" font-size="11" fill="rgba(255,255,255,0.85)">Build and critique slide decks</text>
 
-  <!-- Card: Strategy Writing -->
-  <rect x="44" y="496" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
-  <rect x="44" y="496" width="380" height="38" rx="10" fill="#C87941"/>
-  <rect x="44" y="520" width="380" height="14" fill="#C87941"/>
-  <text x="62" y="521" class="card-title">Strategy Writing</text>
-  <text x="62" y="556" class="card-desc">Clean up any text. Eliminate AI patterns.</text>
-  <text x="62" y="572" class="card-desc">Enforce specificity and word economy.</text>
-  <text x="62" y="596" class="card-use">"Make this sound human." or "Check for AI patterns."</text>
-  <text x="62" y="628" class="frameworks">24 AI Patterns   Banned Vocab   Specificity</text>
-  <rect x="262" y="504" width="150" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
-  <text x="275" y="519" class="card-cmd">/strategy-writing</text>
+  <text x="486" y="392" font-size="12" fill="#555">Design principles, chart rules, and actual</text>
+  <text x="486" y="408" font-size="12" fill="#555">PPTX file creation with 7 built-in templates.</text>
 
-  <!-- Card: Strategy Coach -->
-  <rect x="456" y="496" width="380" height="142" rx="10" fill="#fff" stroke="#eaeaea" stroke-width="1"/>
-  <rect x="456" y="496" width="380" height="38" rx="10" fill="#1A1A2E"/>
-  <rect x="456" y="520" width="380" height="14" fill="#1A1A2E"/>
-  <text x="474" y="521" class="card-title">Strategy Coach</text>
-  <text x="474" y="556" class="card-desc">The full end-to-end skill. Combines all five</text>
-  <text x="474" y="572" class="card-desc">skills into one guided process.</text>
-  <text x="474" y="596" class="card-use">"Help me think through this whole thing from scratch."</text>
-  <text x="474" y="628" class="frameworks">SCQA   MECE   Pyramid   Sequencing   Writing   Feedback</text>
-  <rect x="692" y="504" width="132" height="22" rx="11" fill="rgba(255,255,255,0.2)"/>
-  <text x="710" y="519" class="card-cmd">/strategy-coach</text>
+  <rect x="486" y="422" width="40" height="18" rx="9" fill="#f0f5f7"/>
+  <text x="506" y="434" font-size="8" fill="#264653" text-anchor="middle" font-weight="600">Flow</text>
+  <rect x="532" y="422" width="50" height="18" rx="9" fill="#f0f5f7"/>
+  <text x="557" y="434" font-size="8" fill="#264653" text-anchor="middle" font-weight="600">Charts</text>
+  <rect x="588" y="422" width="72" height="18" rx="9" fill="#f0f5f7"/>
+  <text x="624" y="434" font-size="8" fill="#264653" text-anchor="middle" font-weight="600">Templates</text>
+  <rect x="666" y="422" width="40" height="18" rx="9" fill="#f0f5f7"/>
+  <text x="686" y="434" font-size="8" fill="#264653" text-anchor="middle" font-weight="600">PPTX</text>
 
-  <!-- Dashed "contains all" indicator on coach -->
-  <rect x="452" y="492" width="388" height="150" rx="12" fill="none" stroke="#1A1A2E" stroke-width="1" stroke-dasharray="5,4" opacity="0.2"/>
+  <!-- ═══ ROW 3: WRITE + ALL-IN-ONE ═══ -->
+  <text x="48" y="486" font-size="11" font-weight="700" fill="#b0a898" letter-spacing="3">WRITE</text>
+  <text x="464" y="486" font-size="11" font-weight="700" fill="#b0a898" letter-spacing="3">ALL-IN-ONE</text>
 
-  <!-- Writing applies across label -->
-  <line x1="424" y1="567" x2="454" y2="567" class="arrow" stroke-dasharray="4,3"/>
-  <text x="430" y="556" style="font-size:8px; fill:#bbb; transform: rotate(-90deg); transform-origin: 430px 556px;">writing applies to all</text>
+  <!-- Strategy Writing (CT=498) -->
+  <rect x="48" y="498" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
+  <rect x="48" y="498" width="384" height="62" rx="10" fill="#C87941"/>
+  <rect x="48" y="536" width="384" height="24" fill="#C87941"/>
+  <text x="70" y="528" font-size="17" font-weight="700" fill="#fff">Strategy Writing</text>
+  <text x="410" y="528" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/strategy-writing</text>
+  <text x="70" y="548" font-size="11" fill="rgba(255,255,255,0.85)">Eliminate AI patterns from any text</text>
 
-  <!-- ══════════════════════════════════ -->
-  <!-- FOOTER                            -->
-  <!-- ══════════════════════════════════ -->
+  <text x="70" y="582" font-size="12" fill="#555">Clean up slide text, memos, or emails. Enforce</text>
+  <text x="70" y="598" font-size="12" fill="#555">specificity, word economy, and natural rhythm.</text>
 
-  <!-- How to start guide -->
-  <rect x="44" y="660" width="792" height="36" rx="8" fill="#f0f0f0"/>
-  <text x="62" y="682" style="font-size: 11px; fill: #666; font-weight: 600;">Not sure where to start?</text>
-  <text x="220" y="682" style="font-size: 11px; fill: #888;">Use /strategy-coach for guided end-to-end help, or pick a specific skill above.</text>
+  <rect x="70" y="612" width="86" height="18" rx="9" fill="#fdf6ef"/>
+  <text x="113" y="624" font-size="8" fill="#C87941" text-anchor="middle" font-weight="600">24 AI Patterns</text>
+  <rect x="162" y="612" width="86" height="18" rx="9" fill="#fdf6ef"/>
+  <text x="205" y="624" font-size="8" fill="#C87941" text-anchor="middle" font-weight="600">Banned Vocab</text>
+  <rect x="254" y="612" width="68" height="18" rx="9" fill="#fdf6ef"/>
+  <text x="288" y="624" font-size="8" fill="#C87941" text-anchor="middle" font-weight="600">Specificity</text>
 
-  <text x="44" y="714" class="footer">strategyu.co  |  github.com/paulmil11/strategyu-skills</text>
+  <!-- Strategy Coach (CT=498) — featured -->
+  <rect x="464" y="498" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow-lg)"/>
+  <rect x="464" y="498" width="384" height="62" rx="10" fill="#1A1A2E"/>
+  <rect x="464" y="536" width="384" height="24" fill="#1A1A2E"/>
+  <text x="486" y="528" font-size="17" font-weight="700" fill="#fff">Strategy Coach</text>
+  <text x="826" y="528" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/strategy-coach</text>
+  <text x="486" y="548" font-size="11" fill="rgba(255,255,255,0.85)">Everything above in one guided process</text>
+
+  <text x="486" y="582" font-size="12" fill="#555">End-to-end: define the problem, structure your</text>
+  <text x="486" y="598" font-size="12" fill="#555">thinking, build the argument, write the deck.</text>
+
+  <rect x="486" y="612" width="44" height="18" rx="9" fill="#eeedf5"/>
+  <text x="508" y="624" font-size="8" fill="#1A1A2E" text-anchor="middle" font-weight="600">SCQA</text>
+  <rect x="536" y="612" width="44" height="18" rx="9" fill="#eeedf5"/>
+  <text x="558" y="624" font-size="8" fill="#1A1A2E" text-anchor="middle" font-weight="600">MECE</text>
+  <rect x="586" y="612" width="58" height="18" rx="9" fill="#eeedf5"/>
+  <text x="615" y="624" font-size="8" fill="#1A1A2E" text-anchor="middle" font-weight="600">Pyramid</text>
+  <rect x="650" y="612" width="52" height="18" rx="9" fill="#eeedf5"/>
+  <text x="676" y="624" font-size="8" fill="#1A1A2E" text-anchor="middle" font-weight="600">Writing</text>
+
+  <!-- Footer -->
+  <rect x="48" y="656" width="800" height="32" rx="8" fill="#eceae4"/>
+  <text x="70" y="676" font-size="11" fill="#666" font-weight="600">Not sure where to start?</text>
+  <text x="232" y="676" font-size="11" fill="#999">Use </text>
+  <text x="253" y="676" font-size="11" fill="#888" font-family="'SF Mono', Consolas, monospace">/strategy-coach</text>
+  <text x="372" y="676" font-size="11" fill="#999"> for guided help, or pick a specific skill above.</text>
+
 </svg>
