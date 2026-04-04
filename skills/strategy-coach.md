@@ -412,6 +412,12 @@ Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs fo
 
 **Awkward verb-noun pairings.** Use verbs with their natural objects. You "spend" hours, not "cost" them. If the pairing sounds unusual out loud, it's wrong.
 
+**Nominalization.** Don't turn verbs into nouns. "Analyzed" not "performed an analysis." "Decided" not "made the decision to."
+
+**Anthropomorphizing abstractions.** Data doesn't "tell us," "speak," or "demand attention." Say what the data shows.
+
+**Fake precision hedging.** "Approximately 3x" -- either it's 3x or it isn't. "A full 40%" -- just say "40%."
+
 **Copula avoidance.** Things can just "be" things.
 
 **Negative parallelisms.** "It's not just about X; it's about Y" -- collapse into the direct claim.

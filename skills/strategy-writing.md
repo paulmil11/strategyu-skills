@@ -129,6 +129,12 @@ These feel like they're trying to land hard but signal effort instead. If the th
 **1b. Forced metaphors on data.** Don't personify numbers or give data human actions. Chapters don't "absorb" editing. Months aren't "engines." Hours aren't "cost." Say what happened plainly: "Chapter 2 required the most editing," "Most writing happened in February," "Draft 6 took 40 hours."
 
 **1c. Awkward verb-noun pairings.** Use verbs with their natural objects. You "spend" hours, not "cost" them. You "do" editing, things don't "absorb" it. Read the sentence out loud -- if the pairing sounds unusual, it's wrong.
+
+**1d. Nominalization.** Don't turn verbs into nouns. "Analyzed" not "performed an analysis." "Decided" not "made the decision to." "Implemented" not "carried out the implementation of."
+
+**1e. Anthropomorphizing abstractions.** Data doesn't "tell us," "speak," or "demand attention." Numbers don't "paint a picture." Trends don't "signal." Say what the data shows, not what it "does."
+
+**1f. Fake precision hedging.** "Approximately 3x growth" -- either it's 3x or it isn't. "A full 40%" -- just say "40%." "No fewer than 12" -- just say "12."
 - Bad: "This initiative marks a pivotal moment in the evolution of regional governance."
 - Good: "The office was created to collect regional statistics independently from the national agency."
 

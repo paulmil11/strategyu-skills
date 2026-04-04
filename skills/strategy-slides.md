@@ -519,6 +519,12 @@ Cut on sight:
 
 **Awkward verb-noun pairings.** Use verbs with their natural objects. You "spend" hours, not "cost" them. You "do" editing, things don't "absorb" it. If the pairing sounds unusual, it's wrong.
 
+**Nominalization.** Don't turn verbs into nouns. "Analyzed" not "performed an analysis." "Decided" not "made the decision to."
+
+**Anthropomorphizing abstractions.** Data doesn't "tell us" or "paint a picture." Say what the data shows.
+
+**Fake precision hedging.** "Approximately 3x" -- either it's 3x or it isn't. "A full 40%" -- just say "40%."
+
 **Copula avoidance.** Things can just "be" things.
 
 **Synonym cycling.** Use the same word when it's the right word.

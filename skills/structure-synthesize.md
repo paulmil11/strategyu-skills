@@ -232,6 +232,16 @@ Every word in a deliverable costs more than a word in prose. Cut on sight:
 
 **Significance inflation.** "Marks a pivotal moment" -- say what happened instead.
 
+**Forced metaphors on data.** Don't personify numbers. Chapters don't "absorb" editing. Months aren't "engines." Say what happened plainly.
+
+**Awkward verb-noun pairings.** Use verbs with their natural objects. You "spend" hours, not "cost" them. Read it out loud -- if the pairing sounds unusual, it's wrong.
+
+**Nominalization.** Don't turn verbs into nouns. "Analyzed" not "performed an analysis." "Decided" not "made the decision to."
+
+**Anthropomorphizing abstractions.** Data doesn't "tell us," "speak," or "demand attention." Say what the data shows, not what it "does."
+
+**Fake precision hedging.** "Approximately 3x growth" -- either it's 3x or it isn't. "A full 40%" -- just say "40%."
+
 **Copula avoidance.** Things can just "be" things. The tool doesn't "serve as a dashboard" -- it *is* one.
 
 **Negative parallelisms.** "It's not just about X; it's about Y" -- collapse into the direct claim.
