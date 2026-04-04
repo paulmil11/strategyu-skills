@@ -60,6 +60,12 @@ done
 
 Once installed, use them with slash commands: `/problem-framer`, `/structure-synthesize`, `/strategy-communicator`, `/strategy-writing`, `/strategy-coach`, `/strategy-slides`.
 
+## Claude Chat / Cowork
+
+These tools only accept one file at a time. Use **strategy-coach.md** -- it includes all frameworks (SCQA, MECE, Pyramid Principle, slide design, writing rules) in a single file. Paste it into Project Instructions or at the start of a conversation.
+
+If you only need one capability (e.g., slide help), paste that individual skill file instead.
+
 ## Advanced: Other AI Tools
 
 - **ChatGPT** -- Paste into Custom Instructions or create a custom GPT
