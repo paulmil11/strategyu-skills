@@ -7,21 +7,33 @@ set -e
 
 SKILLZ_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 WEBSITE_DIR="/Users/paulmillerd/Millerdhq/website-strategyu"
-DL_DIR="$WEBSITE_DIR/public/downloads"
-IMG_DIR="$WEBSITE_DIR/public/images/skills"
+COURSE_DIR="/Users/paulmillerd/Millerdhq/app-strategyu-course"
+TODAY=$(date -u +"%Y-%m-%d")
 
-if [ ! -d "$WEBSITE_DIR" ]; then
-  echo "website-strategyu not found at $WEBSITE_DIR -- skipping sync"
-  exit 0
+# --- website-strategyu: public download page ---
+if [ -d "$WEBSITE_DIR" ]; then
+  DL_DIR="$WEBSITE_DIR/public/downloads"
+  IMG_DIR="$WEBSITE_DIR/public/images/skills"
+  mkdir -p "$DL_DIR" "$IMG_DIR" "$WEBSITE_DIR/src/data"
+
+  cp "$SKILLZ_DIR/strategyu-skills-claude.zip" "$DL_DIR/"
+  cp "$SKILLZ_DIR/strategyu-skills-general.zip" "$DL_DIR/"
+  cp "$SKILLZ_DIR/skill-guide.svg" "$IMG_DIR/skill-guide.svg"
+  echo "$TODAY" > "$WEBSITE_DIR/src/data/skills-last-updated.txt"
+  echo "Synced -> website-strategyu"
+else
+  echo "website-strategyu not found -- skipping"
 fi
 
-mkdir -p "$DL_DIR" "$IMG_DIR"
+# --- app-strategyu-course: paid lesson downloads ---
+if [ -d "$COURSE_DIR" ]; then
+  COURSE_DL_DIR="$COURSE_DIR/private/downloads"
+  mkdir -p "$COURSE_DL_DIR"
 
-cp "$SKILLZ_DIR/strategyu-skills-claude.zip" "$DL_DIR/"
-cp "$SKILLZ_DIR/strategyu-skills-general.zip" "$DL_DIR/"
-cp "$SKILLZ_DIR/skill-guide.svg" "$IMG_DIR/skill-guide.svg"
-
-# Update last-sync timestamp file consumed by the download page
-date -u +"%Y-%m-%d" > "$WEBSITE_DIR/src/data/skills-last-updated.txt"
-
-echo "Synced skills -> website-strategyu (zips + svg + timestamp)"
+  cp "$SKILLZ_DIR/strategyu-skills-claude.zip" "$COURSE_DL_DIR/"
+  cp "$SKILLZ_DIR/strategyu-skills-general.zip" "$COURSE_DL_DIR/"
+  cp "$SKILLZ_DIR/skills/strategy-coach.md" "$COURSE_DL_DIR/"
+  echo "Synced -> app-strategyu-course"
+else
+  echo "app-strategyu-course not found -- skipping"
+fi
