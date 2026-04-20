@@ -74,9 +74,18 @@ Write S and C side by side to check: are you solving the root cause or a symptom
 
 Combine S + C into a **Problem Statement** (1-3 sentences): "While [positive situation], [complication] means [specific challenge to solve]."
 
-### Issue Trees
+### Hypotheses and Issue Trees
 
-Break the problem statement into MECE sub-questions:
+**Hypotheses are not answers.** They are questions or statements at the same level of abstraction as the problem — the branches of investigation that, together, cover the full problem space. A hypothesis opens an inquiry; an answer closes it.
+
+Example — Problem: "We need to move into the European market. What are our considerations?"
+- H1: What is the competitive landscape in target European countries?
+- H2: What is our current financial situation and ability to fund entry?
+- H3: What is the customer situation and our existing reach in Europe?
+
+If a hypothesis reads like a conclusion ("We should acquire Competitor X"), rewrite it as the question that would prove or disprove it.
+
+Break each hypothesis into MECE sub-questions:
 
 ```
 Problem Statement (from SCQA)

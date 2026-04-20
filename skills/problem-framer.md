@@ -51,16 +51,29 @@ Test: Does this capture the root cause, not just a symptom? Write S and C side b
 
 ### Step 3: Generate Hypotheses
 
+**Hypotheses are NOT answers.** They are the questions or statements you need to investigate to address the problem. Think of them as the branches of inquiry that, taken together, cover the full problem space.
+
+A hypothesis opens an investigation. An answer closes one. At this stage you want to open — not close.
+
 From the problem statement, develop 2-3 high-level hypotheses:
-- Each must be at the same level of abstraction
-- Together they should be MECE (no overlaps, no gaps)
-- Each must be testable through analysis
+- Each is a **question or statement at the same level of abstraction as the problem**
+- Together they must be MECE (no overlaps, no gaps)
+- Each must be investigable through a specific kind of analysis
 - Use the Rule of Three as a default
+- You may already suspect answers — note them privately, but keep the hypothesis framed as the search, not the finding
+
+Example (entering European market):
+- Problem: "We need to move into the European market. What are our considerations?"
+- H1: What is the competitive landscape in target European countries?
+- H2: What is our current financial situation and ability to fund entry?
+- H3: What is the customer situation and our existing reach in Europe?
 
 Example (Facebook mobile case):
-1. Is the organization not equipped with the right technology, talent, and capabilities?
-2. Are competitors better positioned with a better product?
-3. Are users not ready to fully transition to mobile?
+- H1: What is the state of our technology, talent, and mobile capabilities?
+- H2: How are competitors positioned in mobile, and where do they beat us?
+- H3: What is user readiness and behavior around the mobile transition?
+
+**Red flag:** if a hypothesis reads like a conclusion ("We should acquire Competitor X" or "Expanding to Germany will fail"), you've skipped ahead. Rewrite it as the question that would prove or disprove that conclusion.
 
 ### Step 4: Build the Issue Tree
 
@@ -102,8 +115,9 @@ Run these checks on the output:
 1. **Solving symptoms, not root causes.** If the S and C don't clearly connect, you're probably addressing a surface issue.
 2. **Questions too broad.** "How can the company improve?" has infinite answers. Narrow the scope: "How can the company improve conversion rate on product X?"
 3. **Mixing abstraction levels.** "Expand into European markets" and "Fix the login button" are not peers.
-4. **Hypotheses that aren't testable.** "We should be more innovative" can't be proved or disproved. "We can increase mobile engagement 20% by shipping feature X" can.
-5. **Skipping the complication.** Without C, you don't have a real problem. You have a topic.
+4. **Hypotheses framed as answers.** "We should acquire Competitor X" is a conclusion, not a hypothesis. Rewrite as the question: "Would acquiring Competitor X close our capability gap faster than building internally?" Hypotheses open investigations. Answers close them.
+5. **Hypotheses that aren't investigable.** "We should be more innovative" can't be proved, disproved, or researched. "What is the gap between our innovation output and our top three competitors?" can.
+6. **Skipping the complication.** Without C, you don't have a real problem. You have a topic.
 
 ## Output Format
 
