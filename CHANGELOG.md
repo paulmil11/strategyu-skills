@@ -2,6 +2,13 @@
 
 All notable changes to the StrategyU AI Skills suite. Most recent first.
 
+## 2026-04-22
+
+- **Memos now use the Pyramid Principle explicitly.** Top-down structure: governing thought first, insight-statement section headers, evidence supports (not leads). First-sentence test added (if reader reads only first sentences, they should get the full argument).
+- **Emails bold the insights, not keywords.** Bolded fragments must read as a standalone summary scannable in three seconds. Added a worked example.
+- **New pattern: Lazy descriptors that dodge the insight.** Vague shape-words like "thinner," "tighter," "softer," "fuller" used as the main point. Now flagged and rewritten with the insight stated plainly. Pattern count: 24 -> 25.
+- **Ask about audience before writing from scratch.** New five-question prompt added to strategy-writing, strategy-communicator, and strategy-coach: reader, stance (supportive/skeptical/opposed), desired decision, time available, what they care about. Skipped when editing existing text.
+
 ## 2026-04-20
 
 - **Hypotheses are questions, not answers.** Rewrote Problem Framer Step 3 and Strategy Coach issue-tree guidance. Hypotheses now open investigations at the same level of abstraction as the problem instead of pre-baking conclusions. Added a red-flag check and a new Europe-market example.
