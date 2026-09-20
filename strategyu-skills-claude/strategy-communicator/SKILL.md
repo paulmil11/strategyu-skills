@@ -5,10 +5,11 @@ description: >
   and use Carmen Simon's three modes for memorability. Turns structured thinking
   into compelling communication -- decks, memos, exec summaries, emails.
 when_to_use: >
-  Use when the user has a recommendation or argument and needs to communicate it.
-  Trigger on "present this," "write the deck," "executive summary," "how do I
-  sequence this," "ten-second test," "make this memorable," "top-down," or
-  "help me communicate this."
+  Use when the user has a recommendation or argument and needs to communicate it
+  as an email, memo, exec summary, or deck. Trigger on "write an email," "draft
+  an email to my boss," "write the memo," "present this," "write the deck,"
+  "executive summary," "how do I sequence this," "ten-second test," "make this
+  memorable," "top-down," or "help me communicate this."
 ---
 
 # Strategy Communicator

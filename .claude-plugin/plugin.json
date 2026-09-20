@@ -1,0 +1,7 @@
+{
+  "name": "strategyu-skills",
+  "version": "1.3.0",
+  "description": "Strategy consulting skills: SCQA, MECE, Pyramid Principle, slides, writing",
+  "author": { "name": "Paul Millerd" },
+  "skills": "./strategyu-skills-claude"
+}

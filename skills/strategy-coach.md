@@ -86,6 +86,8 @@ Combine S + C into a **Problem Statement** (1-3 sentences): "While [positive sit
 
 **Hypotheses are not answers.** They are questions or statements at the same level of abstraction as the problem — the branches of investigation that, together, cover the full problem space. A hypothesis opens an inquiry; an answer closes it.
 
+Both phrasings work: "Did conversion fall after the price change?" and "The same people arrive and fewer convert" are the same hypothesis. What disqualifies one is closing the inquiry ("We should roll back pricing"), not its grammar. Pick one form and hold it across the tree.
+
 Example — Problem: "We need to move into the European market. What are our considerations?"
 - H1: What is the competitive landscape in target European countries?
 - H2: What is our current financial situation and ability to fund entry?

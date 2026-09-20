@@ -207,6 +207,12 @@ Push toward structural feedback (challenging the argument) not cosmetic feedback
 - Specific actions, owners, and deadlines
 - Not a summary. Add one final thought -- a provocation or call to action.
 - "In summary, we have seen that..." is never the right closing.
+- **The title is still a takeaway.** "Decision and next steps" is a label. "Approve by March 14 and we exit both leases before they renew" is a title. The last slide is the one she acts on; it earns a real title more than any other.
+
+### Risk / Objection Slides
+- **Count-only titles are intellectually blank.** "Three risks and how we cover them" tells the reader nothing -- which risks? Name the finding: "The real exposure is West Coast service, not warehouse capacity."
+- State what the risk actually is in the title, then size it and say what covers it in the body.
+- Same rule for any slide whose title starts with a number of things ("Four considerations," "Three options"). Say what they are or what they add up to.
 
 ### Appendix
 - Detailed data, methodology, additional analysis

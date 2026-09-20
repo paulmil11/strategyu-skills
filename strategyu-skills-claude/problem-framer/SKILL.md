@@ -73,7 +73,21 @@ Example (Facebook mobile case):
 - H2: How are competitors positioned in mobile, and where do they beat us?
 - H3: What is user readiness and behavior around the mobile transition?
 
-**Red flag:** if a hypothesis reads like a conclusion ("We should acquire Competitor X" or "Expanding to Germany will fail"), you've skipped ahead. Rewrite it as the question that would prove or disprove that conclusion.
+Either phrasing works, as long as the hypothesis opens an investigation instead of closing one.
+
+**As questions:**
+- H1: What happened to qualified traffic since February?
+- H2: Did visitor-to-signup conversion fall, and at which step?
+- H3: Did the definition of a signup change?
+
+**As testable statements** (often sharper, because each one is a proposition the data can kill):
+- H1: Fewer qualified people are arriving.
+- H2: The same people arrive and fewer convert.
+- H3: What counts as a signup changed.
+
+Both sets are MECE and neither picks a winner. The statement form is still a hypothesis because any one of the three can be disproved by a chart. Pick one form and hold it across the whole tree; don't mix.
+
+**Red flag:** if a hypothesis reads like a conclusion ("We should acquire Competitor X" or "Expanding to Germany will fail"), you've skipped ahead. Rewrite it as the question that would prove or disprove that conclusion. The test isn't grammar — "Germany will fail" is a statement that closes the inquiry, while "Fewer qualified people are arriving" is a statement that opens one.
 
 ### Step 4: Build the Issue Tree
 

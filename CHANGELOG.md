@@ -10,7 +10,11 @@ All notable changes to the StrategyU AI Skills suite. Most recent first.
 - **Worked examples are marked illustrative.** The "pause the Europe launch" email example in Strategy Writing and Strategy Communicator now carries a rule not to reuse its facts in a user's draft.
 - **Problem Framer answers and asks in the same turn.** Clarifying questions come alongside a first-pass SCQA and issue tree, not instead of them.
 - **Bold-label exception.** Strategy Writing's boldface and inline-header rules now exempt emails and slides, where bold insights are the format. Removes a contradiction with Strategy Communicator.
+- **Emails now trigger the Communicator skill.** "Write an email to my CFO recommending X" previously matched no skill at all, so the email rules (subject as takeaway, bolded insights, deadline close) never loaded. Added email and memo phrasings to the trigger list.
+- **Hypotheses can be statements, and the skill now shows how.** Problem Framer always allowed "questions or statements" but only ever demonstrated questions, so output varied run to run. Added a worked example of both forms and clarified that the test is whether a hypothesis opens an inquiry, not its grammar.
+- **Closing slides get real titles.** "Decision and next steps" and "Three risks and how we cover them" were slipping through as slide titles. Added a title rule to the Recommendation slide type and a new Risk/Objection section banning count-only titles.
 - Dropped a stale reference to `presentation-strategist` from Strategy Coach's description.
+- Added an eval suite (`evals/`) and a plugin manifest so these behaviours are now measured rather than assumed. Current result: mean +0.33 improvement over no-skill baseline across 8 cases, with framing, rewriting, and synthesis showing the largest gains.
 
 ## 2026-04-22
 
