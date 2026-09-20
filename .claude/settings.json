@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude plugin eval *)",
+      "Bash(claude plugin validate *)",
+      "Bash(claude update)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/validate-skill.sh",
+            "timeout": 30,
+            "statusMessage": "Validating skill frontmatter..."
+          }
+        ]
+      }
+    ]
+  }
+}

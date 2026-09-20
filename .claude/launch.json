@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "svg-preview",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8234"],
+      "port": 8234
+    },
+    {
+      "name": "deck-review",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4185", "-d", "deck-review"],
+      "port": 4185
+    }
+  ]
+}
