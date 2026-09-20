@@ -2,6 +2,16 @@
 
 All notable changes to the StrategyU AI Skills suite. Most recent first.
 
+## 2026-09-15
+
+- **Trigger phrases now reach the model.** All six skills used a `trigger:` frontmatter field that Claude Code never reads. Renamed to `when_to_use:`, so phrases like "help me frame this" and "clean up the writing" now appear in the skill listing Claude uses to pick a skill.
+- **Coach and Slides no longer compete for the same requests.** Coach owns "help me with my presentation" and "present to my boss" (thinking first); Slides owns "build the deck," "make the PowerPoint," and anything .pptx. Each points to the other.
+- **No invented numbers.** Strategy Writing and Strategy Coach now say: if the source has no specifics, rewrite around [bracketed placeholders] and ask for the numbers rather than making them up.
+- **Worked examples are marked illustrative.** The "pause the Europe launch" email example in Strategy Writing and Strategy Communicator now carries a rule not to reuse its facts in a user's draft.
+- **Problem Framer answers and asks in the same turn.** Clarifying questions come alongside a first-pass SCQA and issue tree, not instead of them.
+- **Bold-label exception.** Strategy Writing's boldface and inline-header rules now exempt emails and slides, where bold insights are the format. Removes a contradiction with Strategy Communicator.
+- Dropped a stale reference to `presentation-strategist` from Strategy Coach's description.
+
 ## 2026-04-22
 
 - **Memos now use the Pyramid Principle explicitly.** Top-down structure: governing thought first, insight-statement section headers, evidence supports (not leads). First-sentence test added (if reader reads only first sentences, they should get the full argument).

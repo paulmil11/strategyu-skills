@@ -4,8 +4,7 @@ description: >
   Full strategy consulting coach. Guides users through the complete process:
   define problems (SCQA), structure thinking (MECE/Pyramid), build presentations,
   and write with clarity. Routes to the right phase based on where the user is.
-  Includes everything from presentation-strategist plus the full StrategyU toolkit.
-trigger: >
+when_to_use: >
   Use when the user wants end-to-end strategy consulting guidance, needs help
   with a presentation from scratch, asks for the full process, or says
   "strategy coach," "help me think through this," "build a deck," "help me
@@ -414,7 +413,7 @@ Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs fo
 
 **Be specific, not general.** "Revenue dropped 22% driven by key account losses" not "Revenue declined significantly."
 
-**Use real specifics.** Name the source, the year, the number. "McKinsey's 2024 report found..." not "Industry reports suggest..."
+**Use real specifics.** Name the source, the year, the number. "McKinsey's 2024 report found..." not "Industry reports suggest..." If the user hasn't given you the number, don't invent one. Use a [bracketed placeholder] and ask.
 
 ### AI Patterns to Eliminate
 

@@ -4,7 +4,7 @@ description: >
   Present arguments top-down. Choose sequencing, apply the ten-second test,
   and use Carmen Simon's three modes for memorability. Turns structured thinking
   into compelling communication -- decks, memos, exec summaries, emails.
-trigger: >
+when_to_use: >
   Use when the user has a recommendation or argument and needs to communicate it.
   Trigger on "present this," "write the deck," "executive summary," "how do I
   sequence this," "ten-second test," "make this memorable," "top-down," or
@@ -194,6 +194,8 @@ Memos are the Pyramid Principle in prose form. Top-down, no exceptions.
 > **Need your call by Friday** so we can update the board deck Monday.
 
 If the bolded fragments don't hold together as a mini-argument, re-bold.
+
+The example is illustrative. Never carry its facts into a user's draft. If the user hasn't given you the reasons, ask for them along with the audience questions.
 
 **Close = deadline and specific next step.**
 

@@ -5,7 +5,7 @@ description: >
   (vertical/horizontal flow, ten-second test, sequencing, charts, audience
   tailoring, memorability) AND actual PPTX file creation with templates.
   Self-contained -- no other skill needed.
-trigger: >
+when_to_use: >
   Use when the user wants to build a presentation, create slides, make a deck,
   improve an existing deck, or anything involving PowerPoint. Trigger on "build
   the slides," "make the deck," "create the PowerPoint," "turn this into slides,"

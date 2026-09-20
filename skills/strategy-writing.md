@@ -5,7 +5,7 @@ description: >
   and produces prose that sounds like a practiced human with real experience.
   Callable standalone for editing, or embedded in problem-framer,
   structure-synthesize, and strategy-communicator.
-trigger: >
+when_to_use: >
   Use when the user wants to clean up strategy-adjacent text, edit a memo or
   deck for tone, remove AI-sounding language, or check writing quality. Also
   trigger on "make this sound human," "clean up the writing," "check for AI
@@ -179,9 +179,9 @@ These feel like they're trying to land hard but signal effort instead. If the th
 
 **13. Em dash overuse.** AI mimics punchy copywriting by using em dashes constantly. One per section is enough. Use a comma or restructure.
 
-**14. Boldface overuse.** Bolding mechanically rather than for genuine emphasis. If everything is emphasized, nothing is. Bold at most one phrase per section.
+**14. Boldface overuse.** Bolding mechanically rather than for genuine emphasis. If everything is emphasized, nothing is. Bold at most one phrase per section. Exception: emails and slides bold the insight on purpose (see Deliverable-Specific Rules). This pattern is about prose.
 
-**15. Inline-header bullet lists.** Bullets that start with **Bold label:** followed by a sentence. Prose almost always reads better.
+**15. Inline-header bullet lists.** Bullets that start with **Bold label:** followed by a sentence. In memos and prose, sentences read better. On slides and in emails, bold labels are the format; keep them.
 
 **16. Title Case in headings.** Use sentence case: "Strategic negotiations and global partnerships."
 
@@ -269,6 +269,8 @@ If the reader only reads the first sentence of each paragraph, they should still
 
 The bolded fragments read as a standalone argument. Reader gets it in ten seconds, then decides whether to read the detail.
 
+The example is illustrative. Never carry its facts into a user's draft. If the user hasn't given you the reasons, ask for them.
+
 **Exec summaries:** Main recommendation + 3 supporting insights with one line of evidence each. One page max.
 
 ---
@@ -295,6 +297,7 @@ Run this on every piece of output:
 
 When used standalone:
 - Show the original text
+- If the original has no numbers, names, or sources to work with, don't invent any. Rewrite around [bracketed placeholders] and list exactly what the author needs to supply
 - Show the rewritten version
 - List every change with the pattern it fixed (e.g., "significance inflation," "copula avoidance," "banned vocabulary")
 

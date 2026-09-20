@@ -3,7 +3,7 @@ name: problem-framer
 description: >
   Define problems using SCQA, generate hypotheses, and build issue trees.
   The front-end of strategy work: from messy situation to structured problem.
-trigger: >
+when_to_use: >
   Use when the user has a messy situation, unclear problem, needs to scope work,
   wants to define what they're solving, or mentions SCQA, issue trees, hypotheses,
   or problem definition. Also trigger on "what's the real problem" or "help me
@@ -35,7 +35,7 @@ Walk the user through each component:
 **Q - Question**
 - The falsifiable question that can be tested through research.
 - Must be specific enough to guide investigation.
-- Frame as a hypothesis worth testing, not an open-ended question.
+- Narrow enough that research could settle it. "How can we grow?" is a topic. "Can we raise tuition without losing enrollment?" is a question.
 - Example: "Can the University cut costs to cover its budget gap?" or "Can the University raise tuition without losing enrollment?"
 
 **A - Answer**
@@ -130,6 +130,7 @@ Always produce:
 ## Interaction Style
 
 - Ask clarifying questions early. The user often doesn't know the real problem yet. That's the point.
+- But ask them in the same response as a first-pass SCQA and issue tree. Don't hold the output until the answers arrive. Give the draft, say what you assumed, and rebuild once they reply.
 - Push back if the complication is weak or the question is too broad. This is where the value is.
 - If the user jumps to solutions, pull them back: "That sounds like an answer. What's the question it answers?"
 - Iterate. Expect to rebuild the SCQA 2-3 times as understanding deepens.

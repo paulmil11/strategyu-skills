@@ -3,7 +3,7 @@ name: structure-synthesize
 description: >
   Organize messy information using MECE, build pyramids with Label-Sort-Insight,
   and turn data into structured arguments with clear recommendations.
-trigger: >
+when_to_use: >
   Use when the user has raw data, notes, research findings, or scattered
   observations and needs to make sense of them. Also trigger on mentions of
   MECE, pyramid principle, synthesis, "organize this," "what does this mean,"
