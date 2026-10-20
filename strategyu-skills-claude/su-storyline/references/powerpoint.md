@@ -2,97 +2,28 @@
 
 The steps follow Step 1 (the ghost deck) in `references/slides.md`.
 
-## Step 2: Pick the Style
+## Step 2: Pick the Template
 
-### How Templates Work
+Ask which of these the user has, in this order:
 
-The user can either:
-1. **Use a built-in style** -- pick from the presets below
-2. **Bring their own .pptx template** -- upload a branded template file with their slide master, colors, fonts, and logo
+1. **Their company's template.** Use it. See "Using a Custom Template" below.
+2. **StrategyU's consulting templates.** Free at https://strategyu.co/strategy-consulting-powerpoint-templates/ (the page asks for an email). It has 100+ slides with action titles: executive summaries, issue trees, charts, frameworks, and roadmaps. There are four styles:
+   - **Crimson:** deep red and charcoal, Georgia titles, Arial body.
+   - **Navy:** navy with a muted steel-blue accent, Cambria and Calibri.
+   - **Minimal:** black, gray, and a deep green accent, all Arial.
+   - **Dark:** dark slate with steel blue and muted gold, for screens and dimmed rooms.
 
-A template .pptx is just a normal PowerPoint file with the desired theme (colors, fonts, slide master, layouts, logo placement) and all slides deleted. python-pptx loads it as the starting point and all new slides inherit the brand.
+   Once the user has downloaded the .pptx, load it like any template. It ships with its sample slides, and they already follow the rules in this skill. For each slide in the ghost deck, start from the closest sample (executive summary, issue tree, chart, roadmap) and replace its text, then delete the samples you didn't use before saving:
 
-### Asking the User
+   ```python
+   def delete_slide(prs, index):
+       sld_id = prs.slides._sldIdLst[index]
+       prs.part.drop_rel(sld_id.rId)
+       prs.slides._sldIdLst.remove(sld_id)
+   ```
+3. **Neither.** Start from a blank widescreen deck: one font family (Arial or Calibri), dark gray text, and one accent color for the number or bar that proves each title.
 
-Before building, ask:
-
-> **Style:** Do you have a branded .pptx template, or should I use a built-in style?
->
-> If built-in: **Which style?**
-> - **Editorial** -- DM Serif Display + DM Sans. Magazine feel, red/amber. Sophisticated.
-> - **Boardroom** -- Playfair Display + Libre Franklin. Deep green, gold. Old money energy.
-> - **Ink** -- Fraunces + Inter. Pure black and white. Literary, minimal.
-> - **Midnight** -- Lora + Inter. Full dark mode, amber accents. Late-night strategy.
-> - **Studio** -- Instrument Serif (italic) + Space Grotesk. Indigo gradient. Creative.
-> - **Earth** -- Cormorant Garamond + DM Sans. Warm browns, terracotta. Grounded.
-> - **Bold Corporate** -- Montserrat. Black/coral. High contrast. Pure sans-serif.
->
-> **Accent color?** (used for emphasis, key data, section dividers -- or keep the default)
-
-### Built-in Style Definitions
-
-#### 1. Editorial
-```
-Primary: #1A1A2E (deep navy)   Accent: #E63946 (red)
-Secondary: #F4A261 (amber)     Light: #FEFEFE (white)
-Heading: DM Serif Display      Body: DM Sans
-Title: 28pt                    Body: 14pt
-Vibe: Magazine editorial. Sophisticated but readable.
-```
-
-#### 2. Boardroom
-```
-Primary: #1B3A2D (deep green)  Accent: #C5975B (gold)
-Text: #444444 (dark gray)      Light: #F7F5F0 (warm cream)
-Heading: Playfair Display      Body: Libre Franklin
-Title: 26pt                    Body: 14pt
-Vibe: Private equity. Investor meetings. The room has leather chairs.
-```
-
-#### 3. Ink
-```
-Primary: #111111 (black)       Accent: #111111 (also black)
-Text: #444444 (gray)           Light: #FFFFFF (white)
-Heading: Fraunces              Body: Inter
-Title: 26pt                    Body: 14pt
-Vibe: Literary. Let the words do the work. No color needed.
-```
-
-#### 4. Midnight
-```
-Primary: #0F0F14 (near-black)  Accent: #D4A843 (amber)
-Text: #C8C0AA (warm gray)      Light: #F0EAD6 (parchment)
-Heading: Lora                  Body: Inter
-Title: 26pt                    Body: 14pt
-Vibe: Dark mode. Late-night strategy session. Warm and focused.
-```
-
-#### 5. Studio
-```
-Primary: #2D1B69 (indigo)      Accent: #8B5CF6 (violet)
-Text: #444444 (gray)           Light: #FAFAFA (near-white)
-Heading: Instrument Serif (italic)  Body: Space Grotesk
-Title: 30pt                    Body: 14pt
-Vibe: Creative strategy. Design studio. The title slide has a subtle glow.
-```
-
-#### 6. Earth
-```
-Primary: #3C2415 (dark brown)  Accent: #C87941 (terracotta)
-Text: #4A3F35 (warm gray)      Light: #FAF6F1 (warm white)
-Heading: Cormorant Garamond    Body: DM Sans
-Title: 28pt                    Body: 14pt
-Vibe: Grounded. Human. The deck you'd present at a retreat, not a boardroom.
-```
-
-#### 7. Bold Corporate
-```
-Primary: #000000 (black)       Accent: #FF3366 (coral)
-Text: #333333 (dark gray)      Light: #F8F8F8 (near-white)
-Heading: Montserrat Bold       Body: Montserrat
-Title: 36pt                    Body: 14pt
-Vibe: High contrast. Confident. The only pure sans-serif template.
-```
+A template .pptx is a normal PowerPoint file with the theme (colors, fonts, slide master, layouts, logo placement) set up. python-pptx loads it as the starting point, and every new slide inherits the look.
 
 ### Using a Custom Template
 
@@ -163,13 +94,13 @@ from pptx.util import Inches, Pt, Emu
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN
 
-# Option A: Built-in style (start from blank, apply style)
+# Option A: No template (start from blank)
 prs = Presentation()
 prs.slide_width = Inches(13.333)  # Widescreen 16:9
 prs.slide_height = Inches(7.5)
 
-# Option B: User's template
-prs = Presentation('user-template.pptx')
+# Option B: The user's template, or a StrategyU template they downloaded
+prs = Presentation('Consulting-Template-Slides-Crimson.pptx')
 ```
 
 ### Create from the Ghost Deck

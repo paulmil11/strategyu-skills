@@ -8,7 +8,7 @@ Keep the whole deck in one file, `deck.html`, in a folder of its own. The file n
 
 - **One slide per `<section class="slide">`**, at a fixed 16:9 size (1280 x 720 px), stacked down the page with its number. Stacked slides are the easiest to review, and they print one per page. Add a present mode (arrow keys, full screen) only if the user asks.
 - **The action title is the slide's `<h2>`.** The body below proves it. The source line and the slide number sit in the bottom margin.
-- **The style lives in CSS variables** at the top of the file: colors, fonts, sizes. Pick a style from "Pick the Style" in `references/powerpoint.md` (or use the user's brand colors) and set it there once, so restyling the deck is one edit. Load fonts from Google Fonts, with a safe fallback (Helvetica, Arial) in case the user is offline.
+- **The style lives in CSS variables** at the top of the file: colors, fonts, sizes. Match the user's company template, or one of the StrategyU template styles (see "Pick the Template" in `references/powerpoint.md`), and set it there once, so restyling the deck is one edit. With neither, keep the starter file's plain defaults. Load fonts from Google Fonts, with a safe fallback (Helvetica, Arial) in case the user is offline.
 - **Charts are inline SVG** drawn from the real numbers: columns and bars from zero, values labelled on the marks, the mark that proves the title in the accent color and the rest gray. Never a pie.
 - **Speaker notes** go in an `<aside class="notes">` on each slide, hidden on screen and in print. Put the source for every number there, and mark text you drafted for the user so they can replace it.
 - **Print styles** make each slide one PDF page at the slide's own size, with backgrounds on.

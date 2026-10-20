@@ -250,6 +250,14 @@ Every word in a deliverable costs more than a word in prose. Cut on sight:
 
 **Conclusions that summarize.** End with a next step or implication. Not "In summary, we have seen that..."
 
+**Newer AI tells (2025 and 2026 models).** The patterns move as the models change.
+- **Watch words.** "Matters," "quietly," "steady," "dependable," "practical," "clearer," "prioritize," "echoed," "universally," "emphasizing," "enhance," "highlighting," "showcasing." Fine on their own. Rewrite when two or three cluster in a paragraph, or when one stands in for a fact.
+- **Same-length sentences.** Newer models keep nearly every sentence between 8 and 20 words. Vary them.
+- **Vague connections.** "Associated with," "in connection with," "linked to." Say what the relationship is.
+- **Over-formatting.** Headers, tables, and bold where a sentence would do.
+- **Link and citation leftovers.** "utm_source=chatgpt.com," "[cite: 1]," or a source that doesn't exist. Open every link and citation.
+- **Judge clusters, not single words.** One flagged word doesn't make a draft machine-written. The goal is clear writing, not getting past a detector.
+
 ### The Test
 
 Could a language model have generated this sentence without real-world knowledge? If yes, rewrite with specific details. Every claim should be backed by a number, a source, or an analysis.
