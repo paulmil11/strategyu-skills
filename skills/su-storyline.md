@@ -13,8 +13,8 @@ when_to_use: >
   Trigger on "write an email," "draft an email to my boss," "write the memo,"
   "executive summary," "what's the storyline," "how do I sequence this,"
   "top-down," "make this memorable," "help me communicate this," "present
-  this," "build the slides," "make the deck," "turn this into slides," "ghost
-  deck," "create the PowerPoint," "critique my deck," "review my slides,"
+  this," "I need to make a deck," "help me build a deck," "build the slides,"
+  "make the deck," "turn this into slides," "ghost deck," "create the PowerPoint," "critique my deck," "review my slides,"
   "feedback on my deck," or "is this slide any good." When the problem or the
   argument isn't worked out yet, start with su-coach, su-frame, or su-structure.
 ---
@@ -215,7 +215,7 @@ The example is illustrative. Never carry its facts into a user's draft. If the u
 
 **Close = deadline and specific next step.**
 
-After the email, add a line or two for the user: the sequencing approach you used, by name (Direct, Indirect, Concerned, or Aggressive), and why it fits this reader.
+After the email, add a short note for the user. Start it with the sequencing approach by name, in these words: "Sequencing: Indirect, because she pushed for the May date." (or Direct, Concerned, or Aggressive). Then say anything else they should know.
 
 ### Memos and Exec Summaries
 
@@ -335,7 +335,15 @@ Every word on a slide costs more than a word in prose. Cut on sight:
 
 **Conclusions that summarize.** End with a next step or implication. Not "In summary, we have seen that..."
 
-**Em dash limit.** One per slide. Two is a pattern. Three is a tell.
+**Em dashes.** Avoid them: use a comma, a colon, or a period. The newest models use fewer of them, so a draft without them proves nothing about who wrote it.
+
+**Newer AI tells (2025 and 2026 models).** The patterns move as the models change.
+- **Watch words.** "Matters," "quietly," "steady," "dependable," "practical," "clearer," "prioritize," "echoed," "universally," "emphasizing," "enhance," "highlighting," "showcasing." Fine on their own. Rewrite when two or three cluster in a paragraph, or when one stands in for a fact.
+- **Same-length sentences.** Newer models keep nearly every sentence between 8 and 20 words. Vary them.
+- **Vague connections.** "Associated with," "in connection with," "linked to." Say what the relationship is.
+- **Over-formatting.** Headers, tables, and bold where a sentence would do.
+- **Link and citation leftovers.** "utm_source=chatgpt.com," "[cite: 1]," or a source that doesn't exist. Open every link and citation.
+- **Judge clusters, not single words.** One flagged word doesn't make a draft machine-written. The goal is clear writing, not getting past a detector.
 
 ### The Test
 

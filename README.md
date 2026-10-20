@@ -92,14 +92,19 @@ cd ~/.claude/skills && rm -rf problem-framer structure-synthesize strategy-commu
 
 **Custom GPTs, Gems, and Projects:** replace the pasted instructions with the new files.
 
-## Presentation Styles
+## Decks: A Slide Editor for Claude and Codex
 
-Storyline includes 7 built-in style suggestions with typography and color pairings: Editorial, Boardroom, Ink, Midnight, Studio, Earth, and Bold Corporate. They're styling guidelines, not template files. The AI applies them to a browser deck or a PowerPoint file, or you can apply them in your own presentation tool.
+I've also built [Decks](https://github.com/paulmil11/decks), a free slide editor that runs inside Claude Code or Codex. You comment under a slide, and the AI makes the change and replies on the slide, so it handles most of the grunt work while you think about the argument. It works with these skills: Storyline builds there when Decks is installed. To set it up, paste the prompt from the Decks README into Claude Code or Codex.
+
+## Slide Templates
+
+Storyline builds PowerPoint decks on your company's template if you have one. If you don't, it uses StrategyU's free consulting templates: 100+ slides with action titles (executive summaries, issue trees, charts, frameworks, and roadmaps) in four styles, Crimson, Navy, Minimal, and Dark. Download them at https://strategyu.co/strategy-consulting-powerpoint-templates/. Browser decks match the same colors and fonts.
 
 ## Writing Rules
 
 Every skill includes writing craft rules that cut AI-sounding patterns:
 
+- 30 AI writing patterns, including the newer 2025 and 2026 tells: new watch words, same-length sentences, vague connection words, over-formatting, and leftover link and citation code
 - 30+ banned AI vocabulary words
 - Forced metaphor and awkward verb-noun detection
 - Significance inflation and false urgency elimination

@@ -457,7 +457,15 @@ Short paragraphs dominate. Most are 2-4 sentences. Single-sentence paragraphs fo
 
 **Lazy descriptors that dodge the insight.** Vague shape-words like "thinner," "tighter," "softer," "fuller," "deeper," "lighter," "bigger" used as the whole insight. They gesture at a conclusion without stating one. Always state the insight in plain terms, then support it with numbers. Don't: "Remote is thinner than it looks." Do: "Remote work has fewer opportunities and pays less than in-person."
 
-**Em dash overuse.** One per slide. Two is a pattern. Three is a tell.
+**Em dashes.** Avoid them: use a comma, a colon, or a period. The newest models use fewer of them, so a draft without them proves nothing about who wrote it.
+
+**Newer AI tells (2025 and 2026 models).** The patterns move as the models change.
+- **Watch words.** "Matters," "quietly," "steady," "dependable," "practical," "clearer," "prioritize," "echoed," "universally," "emphasizing," "enhance," "highlighting," "showcasing." Fine on their own. Rewrite when two or three cluster in a paragraph, or when one stands in for a fact.
+- **Same-length sentences.** Newer models keep nearly every sentence between 8 and 20 words. Vary them.
+- **Vague connections.** "Associated with," "in connection with," "linked to." Say what the relationship is.
+- **Over-formatting.** Headers, tables, and bold where a sentence would do.
+- **Link and citation leftovers.** "utm_source=chatgpt.com," "[cite: 1]," or a source that doesn't exist. Open every link and citation.
+- **Judge clusters, not single words.** One flagged word doesn't make a draft machine-written. The goal is clear writing, not getting past a detector.
 
 ### Slide Text Specifics
 

@@ -2,6 +2,17 @@
 
 All notable changes to the StrategyU AI Skills suite. Most recent first.
 
+## 2026-10-20 (2.1)
+
+- **Writing adds the newer AI tells (2025 and 2026 models).** Five new patterns, 26 to 30: the new watch words ("matters," "quietly," "steady," "dependable," "practical," "clearer," "prioritize," "echoed," "universally," plus "emphasizing," "enhance," "highlighting," "showcasing"), every sentence the same 8-to-20-word length, vague connection words ("associated with"), over-formatting, and link and citation leftovers ("utm_source=chatgpt.com," "[cite: 1]"). Negative parallelisms now include the "Y rather than X" form, and forced metaphors include "X is the Y of Z."
+- **Judge clusters, not single words.** One flagged word doesn't make a draft machine-written. The quality check says so, and a new section lists what human writing does (plain "is" and "has," plain verbs, definite claims, honest qualifiers) so a rewrite keeps it.
+- **Em dashes:** the newest models use fewer, so a draft without them proves nothing. StrategyU style still avoids them, and Writing's own examples no longer use them.
+- **The other four skills** get the same short block of 2026 tells in their writing rules.
+- **Storyline points to StrategyU's free consulting templates** (100+ slides in four styles) when the user has no company template, in place of seven built-in style presets.
+- **Storyline knows about Decks** (https://github.com/paulmil11/decks), StrategyU's free slide editor for Claude Code and Codex. It builds there when Decks is installed, and the README now links it.
+- Email notes now start with the sequencing by name ("Sequencing: Indirect, because..."), and Storyline triggers on "I need to make a deck" and "help me build a deck."
+- New eval case: `rewrite-2026-tells`. Result: 12 cases, overall 0.97 (up from 0.92), +0.26 over no skills; after the two fixes above, the email and deck-question cases pass 3 of 3.
+
 ## 2026-10-20 (2.0)
 
 - **Five skills, named by step.** Problem Framer is now **Frame** (`su-frame`), Structure & Synthesize is **Structure** (`su-structure`), Strategy Writing is **Writing** (`su-writing`), and Strategy Coach is **Coach** (`su-coach`). The `su-` tag keeps the names from clashing with other skills you have installed.
