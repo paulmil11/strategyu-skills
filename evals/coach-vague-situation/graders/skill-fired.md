@@ -1,5 +1,5 @@
 ---
 type: tool_used
 tool: Skill
-input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:strategy-coach|problem-framer)"'
+input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:su-coach|su-frame)"'
 ---

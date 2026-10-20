@@ -12,7 +12,7 @@
 
   <!-- Title area -->
   <text x="48" y="46" font-size="30" font-weight="700" fill="#1a1a2e" letter-spacing="-0.5">StrategyU Skills</text>
-  <text x="48" y="68" font-size="13" fill="#888">Six tools for thinking, writing, and communicating like a strategy consultant</text>
+  <text x="48" y="68" font-size="13" fill="#888">Five skills for thinking, writing, and communicating like a strategy consultant</text>
 
   <!-- ═══ ROW 1: THINK ═══ -->
   <!-- Label at 100, line at 105, cards at 118 -->
@@ -23,8 +23,8 @@
   <rect x="48" y="118" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
   <rect x="48" y="118" width="384" height="62" rx="10" fill="#E63946"/>
   <rect x="48" y="156" width="384" height="24" fill="#E63946"/>
-  <text x="70" y="148" font-size="17" font-weight="700" fill="#fff">Problem Framer</text>
-  <text x="410" y="148" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/problem-framer</text>
+  <text x="70" y="148" font-size="17" font-weight="700" fill="#fff">Frame</text>
+  <text x="410" y="148" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/su-frame</text>
   <text x="70" y="168" font-size="11" fill="rgba(255,255,255,0.85)">Define problems and build issue trees</text>
 
   <text x="70" y="202" font-size="12" fill="#555">Use SCQA to define the real problem, generate</text>
@@ -41,8 +41,8 @@
   <rect x="464" y="118" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
   <rect x="464" y="118" width="384" height="62" rx="10" fill="#2A9D8F"/>
   <rect x="464" y="156" width="384" height="24" fill="#2A9D8F"/>
-  <text x="486" y="148" font-size="17" font-weight="700" fill="#fff">Structure &amp; Synthesize</text>
-  <text x="826" y="148" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/structure-synthesize</text>
+  <text x="486" y="148" font-size="17" font-weight="700" fill="#fff">Structure</text>
+  <text x="826" y="148" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/su-structure</text>
   <text x="486" y="168" font-size="11" fill="rgba(255,255,255,0.85)">Organize data into clear arguments</text>
 
   <text x="486" y="202" font-size="12" fill="#555">Turn raw research into a pyramid: main idea,</text>
@@ -60,43 +60,29 @@
   <text x="48" y="290" font-size="12" font-weight="700" fill="#3a342c" letter-spacing="1" font-family="Georgia, 'Times New Roman', serif">COMMUNICATE</text>
   <line x1="48" y1="295" x2="848" y2="295" stroke="#c8c2b8" stroke-width="0.75"/>
 
-  <!-- Communicator (CT=308) -->
-  <rect x="48" y="308" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
-  <rect x="48" y="308" width="384" height="62" rx="10" fill="#457B9D"/>
-  <rect x="48" y="346" width="384" height="24" fill="#457B9D"/>
-  <text x="70" y="338" font-size="17" font-weight="700" fill="#fff">Communicator</text>
-  <text x="410" y="338" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/strategy-communicator</text>
-  <text x="70" y="358" font-size="11" fill="rgba(255,255,255,0.85)">Build memos, emails, and exec summaries</text>
+  <!-- Storyline (CT=308), full width -->
+  <rect x="48" y="308" width="800" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
+  <rect x="48" y="308" width="800" height="62" rx="10" fill="#457B9D"/>
+  <rect x="48" y="346" width="800" height="24" fill="#457B9D"/>
+  <text x="70" y="338" font-size="17" font-weight="700" fill="#fff">Storyline</text>
+  <text x="826" y="338" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/su-storyline</text>
+  <text x="70" y="358" font-size="11" fill="rgba(255,255,255,0.85)">Emails, memos, exec summaries, and decks</text>
 
-  <text x="70" y="392" font-size="12" fill="#555">Present arguments top-down. Choose the right</text>
-  <text x="70" y="408" font-size="12" fill="#555">sequencing for your audience. Make it stick.</text>
+  <text x="70" y="392" font-size="12" fill="#555">Put the argument in the right order for your audience, then build it: the email or memo, or a deck built in your</text>
+  <text x="70" y="408" font-size="12" fill="#555">AI tool's browser or as PowerPoint and checked slide by slide. It also gives feedback on decks you already have.</text>
 
   <rect x="70" y="422" width="76" height="18" rx="9" fill="#eff6ff"/>
   <text x="108" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Sequencing</text>
-  <rect x="152" y="422" width="84" height="18" rx="9" fill="#eff6ff"/>
-  <text x="194" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Memorability</text>
-  <rect x="242" y="422" width="96" height="18" rx="9" fill="#eff6ff"/>
-  <text x="290" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Ten-Second Test</text>
-
-  <!-- Strategy Slides (CT=308) -->
-  <rect x="464" y="308" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
-  <rect x="464" y="308" width="384" height="62" rx="10" fill="#264653"/>
-  <rect x="464" y="346" width="384" height="24" fill="#264653"/>
-  <text x="486" y="338" font-size="17" font-weight="700" fill="#fff">Strategy Slides</text>
-  <text x="826" y="338" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/strategy-slides</text>
-  <text x="486" y="358" font-size="11" fill="rgba(255,255,255,0.85)">Build and critique slide decks</text>
-
-  <text x="486" y="392" font-size="12" fill="#555">Design principles, chart rules, and actual</text>
-  <text x="486" y="408" font-size="12" fill="#555">PPTX file creation with 7 built-in templates.</text>
-
-  <rect x="486" y="422" width="40" height="18" rx="9" fill="#f0f5f7"/>
-  <text x="506" y="434" font-size="8" fill="#264653" text-anchor="middle" font-weight="600">Flow</text>
-  <rect x="532" y="422" width="50" height="18" rx="9" fill="#f0f5f7"/>
-  <text x="557" y="434" font-size="8" fill="#264653" text-anchor="middle" font-weight="600">Charts</text>
-  <rect x="588" y="422" width="72" height="18" rx="9" fill="#f0f5f7"/>
-  <text x="624" y="434" font-size="8" fill="#264653" text-anchor="middle" font-weight="600">Templates</text>
-  <rect x="666" y="422" width="40" height="18" rx="9" fill="#f0f5f7"/>
-  <text x="686" y="434" font-size="8" fill="#264653" text-anchor="middle" font-weight="600">PPTX</text>
+  <rect x="152" y="422" width="96" height="18" rx="9" fill="#eff6ff"/>
+  <text x="200" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Ten-Second Test</text>
+  <rect x="254" y="422" width="74" height="18" rx="9" fill="#eff6ff"/>
+  <text x="291" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Ghost Deck</text>
+  <rect x="334" y="422" width="80" height="18" rx="9" fill="#eff6ff"/>
+  <text x="374" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Browser Deck</text>
+  <rect x="420" y="422" width="74" height="18" rx="9" fill="#eff6ff"/>
+  <text x="457" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">PowerPoint</text>
+  <rect x="500" y="422" width="92" height="18" rx="9" fill="#eff6ff"/>
+  <text x="546" y="434" font-size="8" fill="#457B9D" text-anchor="middle" font-weight="600">Slide Feedback</text>
 
   <!-- ═══ ROW 3: WRITE + ALL-IN-ONE ═══ -->
   <!-- Labels at 480, lines at 485, cards at 498 -->
@@ -108,8 +94,8 @@
   <rect x="48" y="498" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow)"/>
   <rect x="48" y="498" width="384" height="62" rx="10" fill="#C87941"/>
   <rect x="48" y="536" width="384" height="24" fill="#C87941"/>
-  <text x="70" y="528" font-size="17" font-weight="700" fill="#fff">Strategy Writing</text>
-  <text x="410" y="528" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/strategy-writing</text>
+  <text x="70" y="528" font-size="17" font-weight="700" fill="#fff">Writing</text>
+  <text x="410" y="528" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/su-writing</text>
   <text x="70" y="548" font-size="11" fill="rgba(255,255,255,0.85)">Eliminate AI patterns from any text</text>
 
   <text x="70" y="582" font-size="12" fill="#555">Clean up slide text, memos, or emails. Enforce</text>
@@ -127,8 +113,8 @@
   <rect x="464" y="498" width="384" height="140" rx="10" fill="#fff" filter="url(#shadow-lg)"/>
   <rect x="464" y="498" width="384" height="62" rx="10" fill="#1A1A2E"/>
   <rect x="464" y="536" width="384" height="24" fill="#1A1A2E"/>
-  <text x="486" y="528" font-size="17" font-weight="700" fill="#fff">Strategy Coach</text>
-  <text x="826" y="528" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/strategy-coach</text>
+  <text x="486" y="528" font-size="17" font-weight="700" fill="#fff">Coach</text>
+  <text x="826" y="528" font-size="9" fill="rgba(255,255,255,0.45)" font-family="'SF Mono', Consolas, monospace" text-anchor="end">/su-coach</text>
   <text x="486" y="548" font-size="11" fill="rgba(255,255,255,0.85)">Everything above in one guided process</text>
 
   <text x="486" y="582" font-size="12" fill="#555">End-to-end: define the problem, structure your</text>
@@ -147,7 +133,7 @@
   <rect x="48" y="660" width="800" height="32" rx="8" fill="#eceae4"/>
   <text x="70" y="680" font-size="11" fill="#666" font-weight="600">Not sure where to start?</text>
   <text x="232" y="680" font-size="11" fill="#999">Use </text>
-  <text x="253" y="680" font-size="11" fill="#888" font-family="'SF Mono', Consolas, monospace">/strategy-coach</text>
-  <text x="372" y="680" font-size="11" fill="#999"> for guided help, or pick a specific skill above.</text>
+  <text x="253" y="680" font-size="11" fill="#888" font-family="'SF Mono', Consolas, monospace">/su-coach</text>
+  <text x="321" y="680" font-size="11" fill="#999"> for guided help, or pick a specific skill above.</text>
 
 </svg>

@@ -2,6 +2,19 @@
 
 All notable changes to the StrategyU AI Skills suite. Most recent first.
 
+## 2026-10-20 (2.0)
+
+- **Five skills, named by step.** Problem Framer is now **Frame** (`su-frame`), Structure & Synthesize is **Structure** (`su-structure`), Strategy Writing is **Writing** (`su-writing`), and Strategy Coach is **Coach** (`su-coach`). The `su-` tag keeps the names from clashing with other skills you have installed.
+- **Strategy Communicator and Strategy Slides are now one skill, Storyline** (`su-storyline`). It builds the storyline first (the main point, the order, and titles that say the point), then the email, memo, exec summary, or deck. The two skills used to compete for the same requests.
+- **Decks start with a few questions:** who the deck is for, whether you'll present it or send it, where it has to end up (PowerPoint, Google Slides, Keynote, a company template, or just a PDF), and whether to build it in your AI tool's browser. When the argument is already clear, a first-pass storyline comes in the same message.
+- **A new way to build decks: in your AI tool's browser.** The AI writes the deck as one HTML file, opens it in Claude's or Codex's built-in browser, you say what to change slide by slide, and it exports a PDF. PowerPoint is still there for decks that must stay editable.
+- **Every slide gets checked before you see it:** the five-second test for presented decks, the ten-second test for decks people read, horizontal and vertical flow, and four layout guides (margins, titles of two lines at most, a minimum text size, and no more than four text sizes on a slide).
+- **Feedback on decks you already have** follows one order: the story the titles tell, then the slides that need work, then the three changes that matter most.
+- **Frame spells out Situation, Complication, Question, and Answer**, and **Storyline names its sequencing** (Direct, Indirect, Concerned, or Aggressive) when it writes an email.
+- **Writing** adds a rule against narrated audience reactions ("the number the room will stop on").
+- The eval suite moves to the new names and adds three cases: slide feedback, the opening deck questions, and a storyline for a skeptical audience. Result: 10 of 11 cases pass on every run.
+- **Upgrading:** delete the six old skills before installing the five new ones (the README shows how).
+
 ## 2026-09-20
 
 - **Trigger phrases now reach the model.** All six skills used a `trigger:` frontmatter field that Claude Code never reads. Renamed to `when_to_use:`, so phrases like "help me frame this" and "clean up the writing" now appear in the skill listing Claude uses to pick a skill.

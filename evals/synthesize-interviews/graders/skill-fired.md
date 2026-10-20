@@ -1,5 +1,5 @@
 ---
 type: tool_used
 tool: Skill
-input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:structure-synthesize)"'
+input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:su-structure)"'
 ---
