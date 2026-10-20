@@ -35,7 +35,7 @@ if [ -d "$COURSE_DIR" ]; then
   # Gated: served via /api/skills/download to entitled accounts
   cp "$SKILLZ_DIR/strategyu-skills-claude.zip" "$PRIVATE_DL_DIR/"
   cp "$SKILLZ_DIR/strategyu-skills-general.zip" "$PRIVATE_DL_DIR/"
-  cp "$SKILLZ_DIR/skills/strategy-coach.md" "$PRIVATE_DL_DIR/"
+  cp "$SKILLZ_DIR/skills/su-coach.md" "$PRIVATE_DL_DIR/"
 
   # Workshop perk: unlisted, linked only from password-gated /watch pages
   cp "$SKILLZ_DIR/strategyu-skills-claude.zip" "$WORKSHOP_DL_DIR/"
